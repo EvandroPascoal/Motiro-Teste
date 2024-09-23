@@ -1,0 +1,96 @@
+
+
+#arrozPanteraDiv {
+    /* overflow: hidden;
+    opacity: 0;
+    max-height: 0; */
+    /* Restante do seu estilo... */
+    display: none;
+}
+
+#arrozPanteraDiv.visibleDiv {
+    /* max-height: 1000px; 
+    transition: max-height 0.6s ease-in;
+    opacity: 1; */
+    display: block;
+    display: flex;
+}
+
+#arrozCamilDiv {
+
+    display: none;
+
+}
+
+#arrozCamilDiv.visibleDiv {
+    display: block;
+    display: flex;
+}
+
+
+#arrozTioJoaoDiv {
+
+    display: none;
+
+}
+
+#arrozTioJoaoDiv.visibleDiv {
+    display: block;
+    display: flex;
+}
+
+#arrozPratoFinoDiv {
+
+   display: none;
+
+}
+
+#arrozPratoFinoDiv.visibleDiv {
+    display: block;
+    display: flex;
+}
+
+#arrozSolitoDiv {
+
+    display: none;
+
+}
+
+#arrozSolitoDiv.visibleDiv {
+    display: block;
+    display: flex;
+}
+
+#arrozCamil2Div {
+
+display: none;
+
+}
+
+#arrozCamil2Div.visibleDiv {
+    display: block;
+    display: flex;
+}
+
+#arrozSolito2Div {
+
+    display: none;
+
+}
+
+#arrozSolito2Div.visibleDiv {
+    display: block;
+    display: flex;
+}
+
+#arrozPratoFino2Div {
+
+   display: none;
+
+}
+
+#arrozPratoFino2Div.visibleDiv {
+    display: block;
+    display: flex;
+}
+

@@ -1,0 +1,926 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&family=Inter:wght@600&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+:root {
+  --amareloxoxo: #EDBB6C;
+  --verdexoxo: #004F40;
+  --laranjaaa: #FF8215;
+  --amarelolindo: #FFE880;
+}
+
+
+
+
+.conteudoMontarLista {
+  padding-top: 100px;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/fundoggg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caixaParaLista {
+  z-index: 3;
+  position: relative;
+
+  height: 90px;
+  /* background-color: #F86F03; */
+  width: 340px;
+  margin-top: 100px;
+  /* margin-left: auto;
+    margin-right: 200px; */
+}
+
+#precoTotaldaLista {
+  width: 100px;
+  /* Largura fixa */
+}
+
+.listacompra {
+  width: 340px;
+  background-color: #004F40;
+  height: 70px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.listacompra p {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 550;
+  color: #ffffff;
+}
+
+.listacompra.borderRadiusZero {
+  border-radius: 15px 15px 0 0;
+}
+
+#circuloQuantidade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: 3;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 550;
+  position: absolute;
+  margin-left: 290px;
+  margin-bottom: 26px;
+}
+
+
+
+
+.listar123 {
+  width: 100%;
+  height: 50px;
+  background-color: #004F40;
+  color: #ffffff;
+  margin-bottom: 0px;
+  cursor: pointer;
+  border: none;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 550;
+  /* position: absolute;
+    bottom: 0; */
+  transition: background-color 0.3s ease;
+
+
+}
+
+.listar123:hover {
+  background-color: #EDBB6C;
+  color: #000000;
+}
+
+#myDiv {
+
+  position: relative;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  width: 340px;
+  /* height: auto; */
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px 0px 15px 15px;
+  z-index: 2;
+}
+
+#myDiv.visibleeDiv {
+  max-height: 400px;
+  /* ou ajuste conforme necessário */
+  transition: max-height 0.6s ease-in, border-radius 0.6s ease-in;
+}
+
+#myDiv p {
+  margin: 10px 0;
+}
+
+/* Estilo adicional para o botão */
+#toggleButton {
+  padding: 10px;
+  /* background-color: #ff0000; */
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#toggleButton img {
+  height: 45px;
+}
+
+
+.itensListaaa {
+  width: 100%;
+  /* background-color: #fc0000; */
+  display: flex;
+  flex-direction: column;
+  max-height: 330px;
+  overflow-y: auto;
+  margin-top: 5px;
+  align-items: center;
+  margin-bottom: 5px;
+
+
+}
+
+.itensDaLista {
+
+  height: 100px;
+  width: 300px;
+  background-color: rgb(142, 142, 142);
+
+  margin-top: 10px;
+  flex-shrink: 0;
+  border-radius: 15px;
+
+  border: solid 1px rgb(142, 142, 142);
+
+}
+
+
+
+.imgDaLista {
+  width: 100px;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 15px 0px 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+
+}
+
+.imgDaLista img {
+  height: 70px;
+}
+
+.conteudoDaLista {
+  width: 199px;
+  height: 100%;
+  background-color: rgb(255, 254, 254);
+  margin-left: auto;
+  border-radius: 0px 15px 15px 0px;
+
+
+}
+
+.textoItensLista h5 {
+  color: #000;
+
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 2px;
+  margin-bottom: 0;
+  margin-left: 5px;
+  /* background-color: #ffffff; */
+
+}
+
+.textoItensLista h5 :first-child {
+  margin-top: 3px;
+}
+
+.precoMaisMenos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  color: #000;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.maisMenosLista {
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+
+
+
+#circuloQuantidade.esconder {
+  display: none;
+}
+
+
+
+
+
+#adicionar222 {
+
+  transition: all ease-in-out 350ms;
+  /* width: 30px;
+    height: 30px; */
+  padding: 8px;
+  border-radius: 40%;
+  background-color: #fcbd57;
+  cursor: pointer;
+}
+
+#subtrair222 {
+
+  transition: all ease-in-out 350ms;
+  /* width: 30px;
+    height: 30px; */
+  padding: 8px;
+  border-radius: 40%;
+  background-color: #fcbd57;
+  cursor: pointer;
+}
+
+#subtrair222:hover {
+  background-color: #FFE880;
+}
+
+
+#adicionar222:hover {
+  background-color: #FFE880;
+}
+
+
+.desconto {
+  width: 100%;
+  height: 20px;
+  /* background-color: #EDBB6C; */
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.desconto p {
+
+  color: #000000;
+  font-family: 'Gotham Rounded', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+.desconto-porcentagem {
+  height: 80%;
+  width: 38px;
+  background-color: rgb(9, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.desconto-porcentagem p {
+
+  color: #000000;
+  font-family: 'Gotham Rounded', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+
+
+}
+
+.desconto2 {
+  width: 100%;
+  height: 20px;
+  /* background-color: #EDBB6C; */
+  margin-top: auto;
+  display: flex;
+  margin-left: 6px;
+  align-items: center;
+  gap: 5px;
+}
+
+.desconto2 p {
+
+  color: #000000;
+  font-family: 'Gotham Rounded', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+.desconto-porcentagem2 {
+  height: 80%;
+  width: 38px;
+  background-color: rgb(9, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.desconto-porcentagem2 p {
+
+  color: #000000;
+  font-family: 'Gotham Rounded', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+
+
+}
+
+.list {
+  width: 10.125rem;
+  height: 13.2rem;
+  flex-shrink: 0;
+  /* background: #ff0000; */
+  display: inline-block;
+  text-align: center;
+  border-radius: 5%;
+  position: relative;
+  overflow: hidden;
+
+  margin-left: 2rem;
+
+}
+
+.list:last-child {
+  margin-right: 0;
+}
+
+.list:first-child {
+  margin-left: 0;
+}
+
+#menu {
+  /* background-color: chartreuse; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: auto;
+  width: 100%;
+
+}
+
+#cards {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  list-style: none;
+
+  /* background-color: rgb(0, 255, 102); */
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+
+}
+
+
+.list p {
+  width: 300px hidden;
+  /* background-color: crimson; */
+}
+
+#prev,
+#next {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 30px;
+  /* Ajuste o tamanho conforme necessário */
+  z-index: 1;
+  width: 30px;
+  /* Ajuste o tamanho conforme necessário */
+  height: 30px;
+  /* Ajuste o tamanho conforme necessário */
+}
+
+
+
+#next {
+  margin-left: 10px;
+
+}
+
+
+#prev,
+#next {
+
+  color: #000;
+}
+
+#box1 {
+
+  position: relative;
+}
+
+.produtos333 {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8%;
+  box-shadow: 0px 0px 4px 0px var(--verdexoxo) inset;
+  cursor: pointer;
+
+}
+
+
+
+
+
+#cards h3 {
+  margin-top: 3px;
+  margin-right: 70px;
+  margin-bottom: 0px;
+  color: #000;
+
+  /* font-family: Gotham Rounded; */
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 650;
+  line-height: normal;
+}
+
+.h555 {
+  margin-top: 2px;
+  width: 90%;
+  height: auto;
+  margin-left: 10px;
+  margin-bottom: 1px;
+
+}
+
+.h555 h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000;
+
+  /* font-family: Gotham Rounded; */
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.89938rem;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+  margin-right: 90px;
+}
+
+
+
+.menosMais {
+  display: flex;
+
+  width: 100px;
+  height: 34px;
+  background-color: rgb(255, 255, 255);
+  z-index: 30;
+  position: absolute;
+  margin-left: 46px;
+  margin-top: 70px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 0px #000000 inset;
+  display: none;
+
+}
+
+#adicionar {
+  margin-left: 117px;
+  margin-top: 70px;
+  z-index: 40;
+  position: absolute;
+  transition: all ease-in-out 350ms;
+  padding: 9px;
+  border-radius: 40%;
+  background-color: #fcbd57;
+}
+
+#adicionar:hover {
+  background-color: #ffe880;
+}
+
+#contadorrr {
+
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 550;
+  margin-right: 30%;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  /* background-color: #ff9d00; */
+}
+
+#subtrair {
+  transition: all ease-in-out 350ms;
+  padding: 9px;
+  border-radius: 40%;
+  background-color: #fcbd57;
+  margin-right: auto;
+
+}
+
+#subtrair:hover {
+  background-color: #FFE880;
+}
+
+#arroz {
+  /* background-color: darkgreen; */
+
+  width: 100%;
+  display: none;
+}
+
+.telaItens {
+  /* background-color: fuchsia; */
+  max-height: 520px;
+  overflow-y: auto;
+  z-index: 2;
+  width: 80%;
+  /* margin-left: auto;
+        margin-right: 200px; */
+
+
+
+
+}
+
+
+.produto-fechar {
+  width: 100%;
+  height: auto;
+  /* background-color: #FFE880; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.tituloProdutos44 {
+  margin-left: 40px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Exo 2', sans-serif;
+  color: #000;
+  font-size: 1.439rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+
+
+#botaoFechar {
+  margin-right: 10px;
+  /* width: 30px;
+      height: 30px; */
+  padding: 8px;
+  background-color: var(--verdexoxo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 40%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #ffffff;
+
+
+}
+
+#botaoFechar:hover {
+  background-color: rgb(255, 28, 28);
+  color: #000;
+}
+
+button {
+  background-color: transparent;
+  border-style: none;
+}
+
+.deleteButton {
+  background-color: #004F40;
+  /* Cor de fundo vermelha */
+  color: #ffffff;
+  /* Cor do texto branca */
+  border: none;
+  /* Remove a borda */
+  padding: 3px 6px;
+  /* Adiciona um pouco de espaço interno */
+  /* Adiciona um pouco de espaço à esquerda do botão */
+  cursor: pointer;
+  /* Muda o cursor para indicar que é clicável */
+  border-radius: 30%;
+  transition: 0.3s ease-in-out;
+  font-size: 18px;
+
+}
+
+.deleteButton:hover {
+  background-color: red;
+  color: #000;
+}
+
+.searchListItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteButton {
+  /* (Estilos anteriores) */
+  align-self: flex-end;
+  /* Posiciona o botão à direita na linha */
+}
+
+#fechar222 {
+  width: 35px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #EDBB6C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+
+  display: none;
+}
+
+.fa-magnifying-glass {
+  font-size: 25px;
+  color: #000;
+}
+
+.fa-times {
+  font-size: 25px;
+  color: #000;
+}
+
+.fa-search {
+  font-size: 25px;
+  color: #000;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .telaItens {
+    /* background-color: fuchsia; */
+    max-height: 520px;
+    overflow-y: auto;
+    z-index: 2;
+    width: 96%;
+    /* margin-left: auto;
+        margin-right: 200px; */
+
+
+
+
+  }
+
+  #fechar222 {
+    width: 45px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #EDBB6C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    cursor: pointer;
+
+
+    display: block;
+  }
+
+  #circuloQuantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: 3;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 550;
+    position: absolute;
+    /* margin-left: 290px; */
+    /* margin-bottom: 26px; */
+    /* margin-right: 84px; */
+  }
+
+
+  #toggleButton {
+    padding: 10px;
+    /* background-color: #ff0000; */
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+
+
+  #toggleButton img {
+    height: 45px;
+  }
+
+  .listacompra {
+    width: 340px;
+    background-color: #004F40;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* position: absolute; */
+
+  }
+
+  .listacompra p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 550;
+    color: #ffffff;
+  }
+
+
+  .caixaParaLista {
+    z-index: 3;
+    position: relative;
+    margin-left: 50px;
+    height: 90px;
+    /* background-color: #F86F03; */
+    width: 40px;
+    margin-top: 10px;
+    /* margin-left: auto;
+        margin-right: 200px; */
+  }
+
+
+
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+
+  #circuloQuantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: 4;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 550;
+    position: absolute;
+    /* margin-left: 290px; */
+    /* margin-bottom: 26px; */
+    margin-right: 8px;
+  }
+
+
+
+  #MinhaListaTexto {
+    display: block;
+  }
+
+  .caixaParaLista {
+    z-index: 3;
+    position: relative;
+    margin-left: 0px;
+    height: 90px;
+    /* background-color: #F86F03; */
+    width: 100%;
+    margin-top: 10px;
+    /* margin-left: auto;
+        margin-right: 200px; */
+  }
+
+
+  #myDiv {
+
+    /* position: absolute; */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    width: 340px;
+    /* height: auto; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 15px 15px;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .listacompra {
+    width: 340px;
+    background-color: #004F40;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* position: absolute; */
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+
+  .telaItens {
+    /* background-color: fuchsia; */
+    max-height: 520px;
+    overflow-y: auto;
+    z-index: 2;
+    width: 96%;
+    /* margin-left: auto;
+            margin-right: 200px; */
+
+
+
+
+  }
+
+
+}

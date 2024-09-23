@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    
+
+}
+
+
+:root {
+    --amareloxoxo: #EDBB6C;
+    --verdexoxo: #004F40;
+    --laranjaaa: #FF8215;
+    --amarelolindo: #FFE880;
+}
+
+.cobrirOferta-fundo {
+
+    display: flex;
+
+    height: 100vh;
+    background: url(/img/fundoggg.png);
+ 
+  
+
+}
+
+.cobrirOferta-esquerdo {
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cobrirOferta-direito {
+    width: 50%;
+    height: 100%;
+    
+    /* margin-left: auto; */
+    background: url(/img/cobriuOfertaFundo.jpg);
+    background-size: cover;
+    background-position: center; /* Opcional: centraliza a imagem na tela */
+}
+
+.cobrirOferta-fundoopaciti {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.504);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center; 
+
+}
+
+.cobrirOferta-TextoDireita h2 {
+
+    color: #FFF;
+
+    font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 38px;
+    text-align: center;
+    font-weight: 520;
+    line-height: normal;
+    margin-top: 100px;
+
+}
+
+
+#botao-cobrir {
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #004F40;
+    color: #ffffff;
+    outline-style: none;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 4vw;
+
+   
+    font-family: 'Gotham Rounded', sans-serif;
+    
+    font-size:20px;
+    font-style: normal;
+    font-weight: 550;
+    transition: 0.3s ease-in-out;
+}
+
+#botao-cobrir:hover {
+    background-color: #FFE880;
+    color: #000;
+    box-shadow: 0px 0px 1px 0px #000 inset;
+}
+
+
+
+.cobriu-mercados {
+    width: 100%;
+    height: 32%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.cobriu-cardMercado {
+    height: 100%;
+    width: 180px;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px 0px #000 inset;
+}
+
+.cobriu-imgCard {
+    width: 100%;
+    height: 140px ;
+    /* background-color: #EDBB6C; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+   
+}
+
+.cobriu-imgCard img {
+    height: 85%;
+}
+
+.cobriu-cardMercado h2 {
+
+    margin-top: 16px;
+
+    font-family: 'Gotham Rounded', sans-serif;
+    
+    font-size:20px;
+    font-style: normal;
+    font-weight: 400;
+   
+}
+
+.textoOn800 {
+    display: none;
+}
+
+@media screen and (max-width: 800px){   
+    .textoOn800 {
+        display: block;
+        color: #000000;
+
+        font-family: 'gotham-rounded-book', sans-serif;
+        font-size: 5vw;
+        text-align: center;
+        font-weight: 520;
+        line-height: normal;
+        margin-bottom: 40px;
+    }
+
+
+    .cobrirOferta-fundo {
+
+        display: flex;
+    
+        height: 100vh;
+        background: url(/img/fundoggg.png);
+     
+      
+    
+    }
+    
+    .cobrirOferta-esquerdo {
+        width: 100%;
+        height: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .cobrirOferta-direito {
+        width: 50%;
+        height: 100%;
+        
+        /* margin-left: auto; */
+        background: url(/img/cobriuOfertaFundo.jpg);
+        background-size: cover;
+        background-position: center; /* Opcional: centraliza a imagem na tela */
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 500px){   
+    .textoOn800 {
+        display: block;
+        color: #000000;
+
+        font-family: 'gotham-rounded-book', sans-serif;
+        font-size: 5vw;
+        text-align: center;
+        font-weight: 520;
+        line-height: normal;
+        margin-bottom: 40px;
+    }
+
+
+    .cobrirOferta-fundo {
+
+        display: flex;
+    
+        height: 100vh;
+        background: url(/img/fundoggg.png);
+     
+      
+    
+    }
+    
+    .cobrirOferta-esquerdo {
+        width: 100%;
+        height: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .cobrirOferta-direito {
+        width: 50%;
+        height: 100%;
+        
+        /* margin-left: auto; */
+        background: url(/img/cobriuOfertaFundo.jpg);
+        background-size: cover;
+        background-position: center; /* Opcional: centraliza a imagem na tela */
+        display: none;
+    }
+
+
+    .cobriu-cardMercado {
+        height: 80%;
+        width: 140px;
+        background-color: #FFF;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px 0px 2px 0px #000 inset;
+    }
+    
+    .cobriu-imgCard {
+        width: 100%;
+        height: 120px ;
+        /* background-color: #EDBB6C; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+       
+    }
+    
+    .cobriu-imgCard img {
+        height: 70%;
+    }
+
+    .cobriu-cardMercado h2 {
+
+        margin-top: 16px;
+    
+        font-family: 'Gotham Rounded', sans-serif;
+        
+        font-size:16px;
+        font-style: normal;
+        font-weight: 400;
+       
+    }
+    
+}

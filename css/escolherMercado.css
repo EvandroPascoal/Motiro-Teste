@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+  }
+  body {
+    overflow-x: hidden;
+  }
+  :root{
+    --corPrimaria: #F86F03;
+    --corSecundaria: #FFF112;
+    --corTercearia: verde;
+  }
+
+  ul {
+      list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 80px;
+    background: var(--corSecundaria);
+    position: fixed;
+}
+
+.divCabecalho {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 14px 50px;
+}
+
+.menuELink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.logoName{
+    cursor: pointer;
+}
+
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: url(/img/mulher-bonita-em-frente-a-prateleiras-de-vegetais-escolhendo-o-que-comprar.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.604);
+    
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    margin-top: 160px;
+   
+    margin-bottom: 10vw;
+    /* background-color: aqua; */
+}
+
+.corpoTitulo{
+    color: #ffffff;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: 49.184px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 646px;
+    text-align: center;
+    /* background-color: #FFE880; */
+}
+
+.mercados {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 116px;
+    margin-top: 69px;
+    /* background-color: #F86F03; */
+}
+
+.assai{
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: url(/img/assai.png), rgb(255, 255, 255) 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.3s ease; 
+    cursor: pointer;
+}
+
+.assai:hover {
+    background-color: #FFE880;
+    transform: scale(1.1);
+}
+
+.atacadao{
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: url(/img/atacadao.png), rgb(255, 255, 255) 50% / cover no-repeat;  
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.3s ease; 
+    cursor: pointer;
+
+}
+.atacadao:hover {
+    background-color: #FFE880;
+    transform: scale(1.1);
+}
+
+.amarelo{
+    position: relative;
+    width: 875.002px;
+    height: 444.472px;
+    padding-left: 38.4%;
+    margin-top: 160px;
+}
+
+
+.imgUm{
+    position: absolute;
+    width: 352px;
+    height: 234.609px;
+    flex-shrink: 0;
+    top: 50px;
+    right: 115px;
+}
+
+.imgDois{
+    position: absolute;
+    width: 389px;
+    height: 259.126px;
+    flex-shrink: 0;
+    top: 335px;
+    right: 300px;
+}
+
+.rodape {
+    width: 100%;
+    height: 340px;
+    background: var(--corSecundaria);
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.caixaDeTexto{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 45px;
+    gap: 109px;
+    width: 100%;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 12.5px;
+}
+
+.siganos {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.direitosReservados{
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    margin-top: auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #000;
+    font-family: Gotham Rounded;
+    font-size: 23.417px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+@media screen and (max-width: 800px){  
+
+    
+main {
+    width: 100%;
+    height: 100%;
+    background: url(/img/mulher-bonita-em-frente-a-prateleiras-de-vegetais-escolhendo-o-que-comprar.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+    
+section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.604);
+    
+}
+
+.corpo{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 160px;
+     width: 100%;
+    margin-bottom: 10vw;
+    /* background-color: aqua; */
+}
+
+.corpoTitulo{
+    color: #ffffff;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: 49.184px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 500px;
+    text-align: center;
+    /* background-color: #FFE880; */
+}
+
+.mercados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 116px;
+    margin-top: 69px;
+    /* background-color: #F86F03; */
+}
+
+.assai{
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: url(/img/assai.png), rgb(255, 255, 255) 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.3s ease; 
+    cursor: pointer;
+}
+
+.assai:hover {
+    background-color: #FFE880;
+    transform: scale(1.1);
+}
+
+.atacadao{
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: url(/img/atacadao.png), rgb(255, 255, 255) 50% / cover no-repeat;  
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.3s ease; 
+    cursor: pointer;
+
+}
+.atacadao:hover {
+    background-color: #FFE880;
+    transform: scale(1.1);
+}
+
+.amarelo{
+    position: relative;
+    width: 875.002px;
+    height: 444.472px;
+    padding-left: 38.4%;
+    margin-top: 160px;
+}
+
+
+.imgUm{
+    position: absolute;
+    width: 352px;
+    height: 234.609px;
+    flex-shrink: 0;
+    top: 50px;
+    right: 115px;
+}
+
+.imgDois{
+    position: absolute;
+    width: 389px;
+    height: 259.126px;
+    flex-shrink: 0;
+    top: 335px;
+    right: 300px;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 504px){  
+
+
+    .corpoTitulo{
+        color: #ffffff;
+        font-family: 'Gotham Rounded', sans-serif;
+        font-size: 6vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 80%;
+        text-align: center;
+        /* background-color: #FFE880; */
+    }
+    
+    .mercados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: 20px;
+        /* background-color: #F86F03; */
+    }
+    
+    .assai{
+        width: 200px;
+        height: 200px;
+        flex-shrink: 0;
+        border-radius: 7px;
+        background: url(/img/assai.png), rgb(255, 255, 255) 50% / cover no-repeat;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-color 0.3s ease; 
+        cursor: pointer;
+    }
+    
+    .assai:hover {
+        background-color: #FFE880;
+        transform: scale(1.1);
+    }
+    
+    .atacadao{
+        width: 200px;
+        height: 200px;
+        flex-shrink: 0;
+        border-radius: 7px;
+        background: url(/img/atacadao.png), rgb(255, 255, 255) 50% / cover no-repeat;  
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-color 0.3s ease; 
+        cursor: pointer;
+    
+    }
+
+
+}

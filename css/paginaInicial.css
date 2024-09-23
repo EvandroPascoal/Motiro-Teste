@@ -1,0 +1,1039 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+:root {
+  --amareloxoxo: #EDBB6C;
+  --verdexoxo: #004F40;
+  --laranjaaa: #FF8215;
+  --amarelolindo: #FFE880;
+}
+
+
+body {
+  overflow-x: hidden;
+
+
+}
+
+/* Inicio */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.caixap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  /* Garante que o vídeo não ultrapasse os limites da caixap */
+}
+
+.caixap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  /* Cor da camada de sobreposição com 70% de opacidade */
+}
+
+
+
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Para garantir que o vídeo cubra toda a seção */
+  z-index: -1;
+}
+
+.caixa1 {
+  text-align: center;
+  /* Para centralizar o texto horizontalmente */
+  color: white;
+  z-index: 1;
+  /* Garante que o texto fique acima do vídeo */
+  margin-right: 40vw;
+
+}
+
+.caixa1 .text {
+  display: flex;
+  font-family: 'gotham-rounded-book', sans-serif;
+  /* font-family: 'Exo 2', sans-serif; */
+  font-weight: medium;
+  gap: 0.3vw;
+  font-size: clamp(16px, 2.5vw, 30px);
+  margin-top: 30px;
+}
+
+.caixa1 h2 {
+  font-size: clamp(30px, 6vw, 80px);
+  font-family: 'gotham-rounded-book', sans-serif;
+  font-weight: bold;
+}
+
+
+/* lista mercado */
+
+.listasmercado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(/img/fundoggg.png);
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Poppins", sans-serif;
+  
+
+}
+
+
+
+.listasmercado h3 {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2rem, 5vw, 39.186px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 3vw;
+  margin-top: 1vw;
+}
+
+.listasmercado h4 {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 4vw;
+}
+
+.listasmercado h2  {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-style: normal;
+  font-weight: 500;
+  display: none;
+
+
+}
+
+.listasmercado h1 {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-style: normal;
+  font-weight: 500;
+
+
+}
+
+
+
+.listaProdutos {
+  width: 200px;
+  height: 220px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  margin-bottom: 10px;
+
+
+}
+
+.container:hover {
+  transform: scale(1);
+  /* Aumenta a div selecionada */
+}
+
+.container:not(:hover) {
+  transform: scale(0.9);
+  /* Diminui as outras divs */
+}
+
+
+.scrollProdutos {
+  width: 100%;
+  position: absolute;
+
+}
+
+.produto {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-bottom: #000000 solid 1px;
+}
+
+.produto:first-child {
+  margin-top: 20px;
+}
+
+.produto :last-child {
+  margin-bottom: 0px;
+}
+
+.precomercado {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.precomercado p {
+  background-color: var(--verdexoxo);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.caixa333 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+/* card 2 */
+
+
+
+.listaProdutos2 {
+  width: 200px;
+  height: 220px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  margin-bottom: 10px;
+
+
+}
+
+.container2:hover {
+  transform: scale(1);
+  /* Aumenta a div selecionada */
+}
+
+.container2:not(:hover) {
+  transform: scale(0.9);
+  /* Diminui as outras divs */
+}
+
+
+.scrollProdutos2 {
+  width: 100%;
+  position: absolute;
+
+}
+
+.produto2 {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-bottom: #000000 solid 1px;
+}
+
+.produto2:first-child {
+  margin-top: 20px;
+}
+
+.produto2:last-child {
+  margin-bottom: 0px;
+}
+
+.precomercado2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.precomercado2 p {
+  background-color: var(--verdexoxo);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+
+
+
+/* card 3 */
+
+
+
+
+
+.listaProdutos3 {
+  width: 200px;
+  height: 220px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  margin-bottom: 10px;
+
+
+}
+
+.container3:hover {
+  transform: scale(1);
+  /* Aumenta a div selecionada */
+}
+
+.container3:not(:hover) {
+  transform: scale(0.9);
+  /* Diminui as outras divs */
+}
+
+
+.scrollProdutos3 {
+  width: 100%;
+  position: absolute;
+
+}
+
+.produto3 {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-bottom: #000000 solid 1px;
+}
+
+.produto3:first-child {
+  margin-top: 20px;
+}
+
+.produto3:last-child {
+  margin-bottom: 0px;
+}
+
+.precomercado3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.precomercado3 p {
+  background-color: var(--verdexoxo);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-family: 'gotham-rounded-book', sans-serif;
+  font-weight: bold;
+}
+
+/* Estilos padrão para telas maiores */
+/* Estilos padrão para telas maiores */
+.container,
+.container2,
+.container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 260px;
+  padding: 6px;
+  height: 300px;
+  border-radius: 10px;
+  border: solid #969696 1px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  /* Adicionar espaçamento entre as divs */
+}
+
+/* ... Seus estilos existentes ... */
+
+
+
+/* fim lista mercado */
+
+
+
+
+/* inicio monte lista */
+
+.monte {
+  width: 100%;
+  height: 70vh;
+  background: #F79602;
+  background: url(../img/imagemListamotiro.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+.montefundo {
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.595);
+
+
+}
+
+.montesualista {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Gotham Rounded', sans-serif;
+  font-size: clamp(2rem, 5vw, 39.186px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 7vw;
+
+
+}
+
+.listaaas {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2vw;
+
+
+
+
+}
+
+
+
+
+
+.crieee {
+
+  color: #ffffff;
+  font-family: 'Gotham Rounded', sans-serif;
+
+
+  font-style: normal;
+  font-weight: 370;
+  line-height: normal;
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.crieee h2 {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  font-weight: 370;
+}
+
+
+.cc {
+  margin-right: auto;
+}
+
+.ee {
+  margin-left: auto;
+
+}
+
+/* .criee-buttoon:hover {
+    background-color:var(--amarelolindo);
+    color: black;
+
+
+  } */
+
+.sw {
+  margin-left: auto;
+  text-align: right;
+}
+
+
+
+
+/* fim monte lista */
+
+
+/* inicio vantagens  */
+
+
+.vantagens {
+  width: 100%;
+
+  background: url(../img/fundoggg.png);
+
+
+  height: 70vh;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Adiciona espaço acima das imagens e do texto */
+}
+
+.vantageens2 {
+
+  color: #000;
+  font-family: 'Gotham Rounded', sans-serif;
+  font-size: clamp(2rem, 5vw, 39.186px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 3vw;
+  margin-top: 5vw;
+}
+
+.imagens-container {
+  display: flex;
+  justify-content: center;
+
+
+
+}
+
+.imagem-container {
+  text-align: center;
+  /* Centraliza o texto abaixo da imagem */
+  width: 100%;
+
+}
+
+.imagem-container:nth-child(2) {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  /* Estilos específicos para o segundo .imagem-container */
+  /* Adicione seus estilos aqui */
+}
+
+.imagem-container:first-child {
+  /* Centraliza o texto abaixo da imagem */
+  margin-left: 5vw;
+  margin-right: 0vw;
+}
+
+.imagem-container:last-child {
+  /* Centraliza o texto abaixo da imagem */
+  margin-right: 5vw;
+  margin-left: 0vw;
+}
+
+
+
+.imagem-container img {
+  width: 100%;
+  /* Ajusta a largura da imagem para 100% do contêiner pai */
+  height: auto;
+  /* Mantém a proporção original da imagem */
+}
+
+/* Adiciona estilo ao texto abaixo da imagem */
+.imagem-container p {
+  color: #000;
+  font-family: 'Gotham Rounded', sans-serif;
+  font-size: clamp(18px, 1vw, 23px);
+  /* Ajuste os valores mínimo, preferido e máximo conforme necessário */
+  font-weight: 350;
+  line-height: normal;
+  margin: 0;
+  /* Remove a margem padrão do parágrafo */
+  margin-bottom: 3vw;
+
+}
+
+
+/* fim vantagens  */
+
+
+
+
+/*Stying for small screens*/
+
+
+
+.telafinal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background: url(../img/woman-with-tablet-checking-shopping-cart-see-if-she-has-everything-she-needs-lunch.jpg);
+  /* Imagem com 50% de opacidade */
+  background-size: cover;
+  background-position: center;
+  /* Opcional: centraliza a imagem na tela */
+  flex-direction: column;
+
+}
+
+
+.telafinal2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.504);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.nperca {
+  width: 100%;
+  color: #ffffff;
+  font-family: 'Gotham Rounded', sans-serif;
+
+  font-size: clamp(2rem, 5vw, 39.186px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: flex-end;
+  /* Alinha os itens na extremidade inferior do contêiner flexível */
+  flex-direction: column;
+  margin-right: 20vw;
+  /* Muda a margem esquerda para 'auto' para alinhar à direita */
+  text-align: right;
+}
+
+
+
+.nperca button {
+  background-color: #1A826F;
+  width: 240px;
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  font-family: 'Gotham Rounded', sans-serif;
+  font-size: 1.8rem;
+  margin-top: 3vw;
+  color: #fff;
+  transition: background-color 0.3s ease;
+
+  cursor: pointer;
+
+}
+
+.nperca button:hover {
+  color: #000;
+  background-color: var(--amarelolindo);
+
+
+}
+
+
+/* rodape */
+
+
+
+
+@media screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+
+
+  }
+
+ 
+  .listasmercado {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background: url(../img/fundoggg.png);
+    flex-direction: column;
+    gap: 0;
+
+
+  }
+
+
+  .listasmercado h1 {
+    margin-top: 3rem;
+  }
+  .listasmercado h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .listasmercado h3 {
+    color: #000;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: clamp(2rem, 5vw, 39.186px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 3vw;
+    margin-top: 6vw;
+  }
+
+  .listasmercado h4 {
+    color: #000;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4vw;
+    margin-bottom: 6vw;
+  }
+
+
+  .caixa333 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+
+
+
+  .imagem-container:nth-child(2) {
+    margin-left: 0vw;
+    margin-right: 0vw;
+    /* Estilos específicos para o segundo .imagem-container */
+    /* Adicione seus estilos aqui */
+  }
+
+  .imagem-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  .imagem-container:first-child {
+    /* Centraliza o texto abaixo da imagem */
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+
+  .imagem-container:last-child {
+    /* Centraliza o texto abaixo da imagem */
+    margin-right: 0vw;
+    margin-left: 0vw;
+  }
+
+  .vantageens2 {
+
+    color: #000;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: clamp(2rem, 5vw, 39.186px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+  }
+
+  .imagem-container img {
+    width: 70%;
+    /* Ajusta a largura da imagem para 100% do contêiner pai */
+    height: auto;
+    /* Mantém a proporção original da imagem */
+  }
+
+  .vantagens {
+    width: 100%;
+
+    background: url(../img/fundoggg.png);
+    height: auto;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Adiciona espaço acima das imagens e do texto */
+  }
+
+  .imagens-container {
+    flex-direction: column;
+    /* Altera para coluna em telas menores que 600px */
+    align-items: center;
+    /* Centraliza as imagens quando em coluna */
+  }
+
+  .imagem-container {
+    margin-right: 0;
+    /* Remove a margem direita quando em coluna */
+    margin-bottom: 20px;
+    /* Adiciona um espaçamento entre as imagens quando em coluna */
+  }
+
+
+
+
+  .caixap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    /* Garante que o vídeo não ultrapasse os limites da caixap */
+  }
+
+
+
+
+
+
+
+
+
+
+  .nperca {
+
+
+
+
+
+    font-size: 25.186px;
+    margin-right: 0vw;
+
+    display: flex;
+    justify-content: center;
+    /* Define a margem esquerda como 'auto' para centralizar */
+    align-items: center;
+    /* Alinha os itens no centro do contêiner flexível */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    margin-left: 0;
+
+  }
+
+
+  .nperca button {
+
+
+    background-color: #1A826F;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 3vw;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+
+
+  .monte {
+    height: auto;
+  }
+
+  .listaaas {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10vw;
+    flex-direction: column;
+    /* Altera para coluna em telas menores que 600px */
+    align-items: center;
+    margin-top: 4vw;
+
+
+
+  }
+
+
+  .cc {
+    margin-right: 0;
+  }
+
+  .ee {
+    margin-left: 0;
+
+  }
+
+  .crieee {
+    margin-bottom: 5vw;
+  }
+
+
+  .sw {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .se {
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  transition: all 0.7s ease;
+  width: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+
+@media screen and (max-width: 550px) {
+
+
+  .content {
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  .caixap {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .caixa1 {
+    margin: 0;
+  }
+
+  .caixa1 .text {
+    display: flex;
+    font-family: 'gotham-rounded-book', sans-serif;
+    /* font-family: 'Exo 2', sans-serif; */
+    font-weight: medium;
+    gap: 0.3vw;
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  
+  .caixa1 h2 {
+    font-size: 3rem;
+    font-family: 'gotham-rounded-book', sans-serif;
+    font-weight: bold;
+  }
+  
+  
+  .listasmercado h3 {
+    color: #000;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 3vw;
+    margin-top: 6vw;
+    text-align: center;
+  }
+
+  .listasmercado h4 {
+    color: #000;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4vw;
+    margin-bottom: 6vw;
+    display: none;
+  }
+
+  .quebra-de-linha {
+    white-space: pre-line;
+  }
+
+  .listasmercado h2 {
+    color: #000;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4vw;
+    margin-bottom: 6vw;
+    display: block;
+  }
+
+
+}

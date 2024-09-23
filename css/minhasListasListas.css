@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --amareloxoxo: #EDBB6C;
+    --verdexoxo: #004F40;
+    --laranjaaa: #FF8215;
+    --amarelolindo: #FFE880;
+}
+
+.m-pedidos {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fundoggg.png);
+    display: flex;
+}
+.m-pedidos-tela {
+    height: 100%;
+    width: 70%;
+ 
+   
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.m-pedidos-esquerda {
+    width: 30%;
+   
+    height: 100%;
+  
+   
+    
+}
+
+.caixaMenu333 {
+
+    width: 18.125rem;
+height: auto;
+background-color: rgb(253, 253, 253);
+border-radius: 2.25rem;
+margin-left: 5rem;
+
+display: flex;
+
+flex-direction: column;
+
+margin-top: 12rem;
+
+
+
+
+box-shadow: 0px 0px 3px 0px #000;
+transition: display 0.8s ease;
+
+
+}
+
+.nome444 {
+    color: rgba(0, 0, 0, 0.82);
+    font-family: Gotham Rounded;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+
+.nome777 {
+    margin-top: 20px;
+    color: #000;
+    font-family: Gotham Rounded;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 325;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+
+  #ativad000 {
+
+    background-color: var(--amarelolindo);
+    padding: 10px;
+border-radius: 20px;
+
+  }
+
+.selectMenu333 {
+   
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+ 
+}
+
+.selectMenu333:last-child{
+    margin-bottom: 20px;
+}
+.selectMenu333:first-child{
+    margin-top: 20px;
+}
+  
+.itensMenu333 {
+    /* background-color: aqua; */
+  
+    color: #000;
+margin-left: 15px;
+font-family: Gotham Rounded;
+font-size: 0.8rem;
+font-style: normal;
+font-weight: 350;
+line-height: normal;
+padding: 10px;
+border-radius: 20px;
+display: flex;
+align-items: center;
+cursor: pointer;
+transition: all ease-in-out 350ms;
+}
+
+.itensMenu333 img {
+    height: 25px;
+    margin-right: 10px;
+}
+
+.itensMenu333:hover {
+    background-color: var(--amarelolindo);
+}
+
+.btnVolta {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-top: 8rem;
+    margin-right: 39.82px;
+    cursor: pointer;
+}
+
+.texto1414 {
+    width: 100%;
+    
+    margin-right: auto;
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+
+}
+
+.texto1414  h2{
+    color: #000;
+    font-family: Gotham Rounded;
+    font-size: 41.379px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+
+.texto1414  p {
+    color: #000;
+    font-family: Gotham Rounded;
+    font-size: 25.095px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    margin-top: 2rem;
+    margin-right: 34vw;
+} 
+
+.textinho{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50%;
+  margin-right: 22%;
+}
+
+.textinho p{
+    margin: 0;
+    
+}
+
+.listas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    text-align: center;
+    cursor: pointer;
+    width: 90%;
+    height: 30%;
+    gap: 3%;
+    text-decoration: none;
+    margin-top: 1%;
+}
+
+.listas p{
+    color: #000;
+    font-family: Gotham Rounded;
+    font-size: 30.3px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    margin: 0;
+    
+}
+
+.verde{
+    font-size: 17.662px;
+    border-radius: 13.784px;
+    background: #03BF00;
+    width: 168px;
+    height: 33px;
+    flex-shrink: 0;
+}
+
+.corpinnho{
+    width: 35px;
+    height: 35.193px;
+    flex-shrink: 0;
+}
+
+.doisCorpinho{
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+.linha-pedidos {
+    margin-top: 1rem;
+    background-color: #000000;
+    height: 2px;
+    width: 90%;
+}

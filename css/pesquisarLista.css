@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&family=Inter:wght@600&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --amareloxoxo: #EDBB6C;
+    --verdexoxo: #004F40;
+    --laranjaaa: #FF8215;
+    --amarelolindo: #FFE880;
+  }
+
+
+.hidden {
+    display: none;
+    
+}
+
+.linhaPesquisar input  {
+    border-radius: 15px;
+    border-style: none;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 550;
+    padding: 5px;
+}
+
+#searchList {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 550;
+  
+   
+   
+}
+
+.listaDePesquisa {
+  
+     margin-left: 200px;
+    width: 330px;
+    height: auto;
+    /* background-color: aqua; */
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    border: #000000 solid 1px;
+    z-index: 1000;
+    position: absolute;
+    
+   
+}
+
+#pesquisar222 {
+    margin-top: 5px;
+
+    border: none;
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 550;
+    background-color: #004F40;
+    border-style: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: aliceblue;
+}
+
+#pesquisar222:hover {
+    background-color: #EDBB6C;
+    color: #000000;
+}
+
+#searchInput {
+    width: 200px;
+    height: 30px;
+    border: solid 1px #000;
+    background-color: #fff2ba;
+    
+}
+
+.fa-circle-check {
+    font-size: 30px; 
+    color: #004F40;
+    transition: background-color 0.3s ease;
+    
+}
+
+.fa-circle-check:hover {
+    color: #EDBB6C;
+
+}
+
+#add222{
+   cursor: pointer;
+    background-color: transparent;
+    border-style: none;
+    margin-left: 7px;
+}
+.linhaPes333 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linhaPesquisar {
+    /* background-color: blueviolet; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.linhaPesquisar  img  {
+    height: 40px;
+    margin-left: 7px;
+}
+
+.listados100 {
+    width: 100%;
+    height: auto;
+    /* background-color: aquamarine; */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listados {
+    width: 90%;
+    height: auto;
+} 
+
+.searchListItem {
+    border-bottom: 1px solid #000000;
+    padding: 8px;
+}
+.searchListItem:last-child {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --amareloxoxo: #EDBB6C;
+    --verdexoxo: #004F40;
+    --laranjaaa: #FF8215;
+    --amarelolindo: #FFE880;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.m-pedidos {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fundoggg.png);
+    display: flex;
+}
+
+
+.m-pedidos-esquerda {
+    width: 30rem;
+    /* background-color: #FF8215; */
+    height: 100%;
+  
+   
+    
+}
+
+.caixaMenu333 {
+
+width: 18.125rem;
+height: auto;
+background-color: rgb(255, 255, 255);
+border-radius: 2.25rem;
+margin-left: 5.9vw;
+display: flex;
+flex-direction: column;
+margin-top: 12rem;
+box-shadow: 0px 0px 3px 0px #000;
+transition: display 0.8s ease;
+
+
+}
+
+.nome444 {
+    color: rgba(0, 0, 0, 0.82);
+       font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+
+.nome777 {
+    margin-top: 20px;
+    color: #000;
+       font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 325;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+
+  #ativad000 {
+
+    background-color: var(--amarelolindo);
+    padding: 10px;
+border-radius: 20px;
+
+  }
+
+.selectMenu333 {
+   
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+ 
+}
+
+.selectMenu333:last-child{
+    margin-bottom: 20px;
+}
+.selectMenu333:first-child{
+    margin-top: 20px;
+}
+  
+.itensMenu333 {
+ 
+    color: #000;
+margin-left: 15px;
+   font-family: 'gotham-rounded-book', sans-serif;
+font-size: 0.8rem;
+font-style: normal;
+font-weight: 350;
+line-height: normal;
+padding: 10px;
+border-radius: 20px;
+display: flex;
+align-items: center;
+cursor: pointer;
+transition: all ease-in-out 350ms;
+}
+
+.itensMenu333 img {
+    height: 25px;
+    margin-right: 10px;
+}
+
+.itensMenu333:hover {
+    background-color: var(--amarelolindo);
+}
+
+#figaraaa {
+    display: none;
+}
+
+.active {
+    display: none;
+}
+
+.m-pedidos-tela {
+    height: 100%;
+    width: 70%;
+    /* background-color: #03BF00; */
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.info-caixa {
+    width: 40rem;
+    height: 66%;
+    /* background-color: #fff; */
+    margin-top: 10rem;
+}
+
+.info-linha1 {
+    width: 100%;
+    height: auto;
+    /* background-color: #FF8215; */
+    display: flex;
+    align-items: center;
+}
+.info-linha1 h4 {
+    color: #000;
+    font-family: 'gotham-rounded-book', sans-serif;
+     font-size: 18.095px;
+     font-style: normal;
+     font-weight: 540;    
+     margin-left: auto;
+     margin-top: auto;
+     margin-right: 30px;
+     cursor: pointer;
+     transition: 0.3s ease-in-out;
+   
+}
+.info-linha1 h4:hover {
+    color: #EDBB6C;
+    
+   
+}
+
+.info-linha1 h2 {
+   
+color: #000;
+font-family: 'gotham-rounded-book', sans-serif;
+ font-size: 23.095px;
+ font-style: normal;
+ font-weight: 540;
+ margin-left: 30px;
+margin-top: 10px;
+
+}
+
+.info-linha2 {
+    /* background-color: aqua; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+.info-nome {
+    height: 3.5rem;
+    border-radius: 10px;
+    width: 16rem;
+    background-color: #FFE880;
+    margin-top: 1rem;
+    border: 1px solid #000;
+}
+
+.info-nome p {
+
+    color: #000;
+font-family: 'gotham-rounded-book', sans-serif;
+ font-size: 15.095px;
+ font-style: normal;
+ font-weight: 500;
+ margin-left: 5px;
+ margin-top: 4px;
+
+
+}
+
+.info-nome h4 {
+
+    color: #000;
+font-family: 'gotham-rounded-book', sans-serif;
+ font-size: 15.095px;
+ font-weight: bold;
+ 
+ margin-left: 5px;
+ margin-top: 7px;
+
+
+}
+
+.info-endereco {
+    width: 16rem;
+    height: 155px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-top: 16px;
+    box-shadow: 0px 0px 1px 0px #000 inset;
+
+}
+
+.edereco-linha1 {
+    height: 30px;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+
+  
+}
+
+.edereco-linha1 p {
+
+    color: #000;
+    font-family: 'gotham-rounded-book', sans-serif;
+     font-size: 16.095px;
+     font-style: normal;
+     font-weight: bold;
+     margin-left: 8px;
+     
+     
+  
+}
+
+.edereco-linha1 h2{
+
+    color: #004F40;
+    font-family: 'gotham-rounded-book', sans-serif;
+     font-size: 16.095px;
+     font-style: normal;
+     font-weight: bold;
+     margin-left: 8px;
+     cursor: pointer;
+     
+     
+  
+}
+
+.endereco-caixa {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    
+    /* background-color: aquamarine; */
+}
+
+.edereco-linha1 h5 {
+
+    color: #000;
+    font-family: 'gotham-rounded-book', sans-serif;
+     font-size: 19.095px;
+     font-style: normal;
+     font-weight: bold;
+     margin-left: 8px;
+     
+     
+  
+}
+
+.edereco-linha1 h3 {
+
+    color: #000;
+    font-family: 'gotham-rounded-book', sans-serif;
+     font-size: 15.095px;
+     font-style: normal;
+     font-weight: bold;
+     margin-left: 8px;
+     margin-top: 18px;
+     
+     
+  
+}
+
+.edereco-linha2 button {
+    background-color: #004F40;
+    color: #e8e8e8;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 14.095px;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.edereco-linha2 button:hover {
+background-color: #EDBB6C;
+color: #000;
+}
+
+.edereco-linha2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .active {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 970px) {
+
+   
+
+  
+
+
+    .caixaMenu333 {
+        display: none;
+    }
+
+  
+
+    .m-pedidos-tela {
+        height: 100%;
+        width: 100%;
+      /* background-color: #03BF00; */
+       
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .m-pedidos-esquerda {
+   
+        display:none;
+        
+       
+      
+       
+        
+    }
+
+   
+
+
+}
+
+@media screen and (max-width: 640px) {
+
+  
+
+    .m-pedidos {
+        width: 100%;
+        height: auto;
+        background: url(../img/fundoggg.png);
+        display: flex;
+    }
+    
+
+    .info-caixa {
+        width: 100%;
+        height:auto;
+        /* background-color: #fff; */
+        margin-top: 6rem;
+        margin-bottom: 8rem;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        
+    }
+    
+
+    
+    .info-linha1 {
+        width: 95%;
+        height: auto;
+        /* background-color: #FF8215; */
+        display: flex;
+        align-items: center;
+    }
+
+.info-linha1 h2 {
+   
+color: #000;
+font-family: 'gotham-rounded-book', sans-serif;
+ font-size: 23.095px;
+ font-style: normal;
+ font-weight: 540;
+ text-align: center;
+margin-top: 20px;
+margin-left: 5px;
+
+}
+
+.info-linha2 {
+    /* background-color: aqua; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.info-nome {
+    height: 3.5rem;
+    border-radius: 10px;
+    width: 16rem;
+    background-color: #FFE880;
+    margin-top: 1rem;
+    border: 1px solid #000;
+}
+
+.info-nome p {
+
+    color: #000;
+font-family: 'gotham-rounded-book', sans-serif;
+ font-size: 15.095px;
+ font-style: normal;
+ font-weight: 500;
+ margin-left: 5px;
+ margin-top: 4px;
+
+
+}
+
+.info-nome h4 {
+
+    color: #000;
+font-family: 'gotham-rounded-book', sans-serif;
+ font-size: 15.095px;
+ font-weight: bold;
+ 
+ margin-left: 5px;
+ margin-top: 7px;
+
+
+}
+
+.info-endereco {
+    width: 16rem;
+    height: 155px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-top: 16px;
+    box-shadow: 0px 0px 1px 0px #000 inset;
+
+}
+
+.edereco-linha1 {
+    height: 30px;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+
+  
+}
+
+.edereco-linha1 p {
+
+    color: #000;
+    font-family: 'gotham-rounded-book', sans-serif;
+     font-size: 16.095px;
+     font-style: normal;
+     font-weight: bold;
+     margin-left: 8px;
+     
+     
+  
+}
+
+.edereco-linha1 h2{
+
+    color: #004F40;
+    font-family: 'gotham-rounded-book', sans-serif;
+     font-size: 16.095px;
+     font-style: normal;
+     font-weight: bold;
+     margin-left: 8px;
+     cursor: pointer;
+     
+     
+  
+}
+
+.endereco-caixa {
+    width: 100%;
+    height: auto;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+    
+    /* background-color: rgb(255, 127, 244); */
+}
+
+.edereco-linha1 h5 {
+
+    color: #000;
+    font-family: 'gotham-rounded-book', sans-serif;
+     font-size: 19.095px;
+     font-style: normal;
+     font-weight: bold;
+     margin-left: 8px;
+     
+     
+  
+}
+
+.edereco-linha1 h3 {
+
+    color: #000;
+    font-family: 'gotham-rounded-book', sans-serif;
+     font-size: 15.095px;
+     font-style: normal;
+     font-weight: bold;
+     margin-left: 8px;
+     margin-top: 18px;
+     
+     
+  
+}
+
+.edereco-linha2 button {
+    background-color: #004F40;
+    color: #e8e8e8;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 14.095px;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.edereco-linha2 button:hover {
+background-color: #EDBB6C;
+color: #000;
+}
+
+.edereco-linha2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+}
+
+
+
+  
+ 

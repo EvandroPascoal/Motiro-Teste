@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --amareloxoxo: #EDBB6C;
+    --verdexoxo: #004F40;
+    --laranjaaa: #FF8215;
+    --amarelolindo: #FFE880;
+}
+
+.m-pedidos {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fundoggg.png);
+    display: flex;
+}
+.m-pedidos-tela {
+    height: 100%;
+    width: 70%;
+ 
+   
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.m-pedidos-esquerda {
+    width: 30%;
+   
+    height: 100%;
+  
+   
+    
+}
+
+.caixaMenu333 {
+
+    width: 18.125rem;
+height: auto;
+background-color: rgb(253, 253, 253);
+border-radius: 2.25rem;
+margin-left: 5rem;
+
+display: flex;
+
+flex-direction: column;
+
+margin-top: 12rem;
+
+
+
+
+box-shadow: 0px 0px 3px 0px #000;
+transition: display 0.8s ease;
+
+
+}
+
+.nome444 {
+    color: rgba(0, 0, 0, 0.82);
+    font-family: Gotham Rounded;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+
+.nome777 {
+    margin-top: 20px;
+    color: #000;
+    font-family: Gotham Rounded;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 325;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+
+  #ativad000 {
+
+    background-color: var(--amarelolindo);
+    padding: 10px;
+border-radius: 20px;
+
+  }
+
+.selectMenu333 {
+   
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+ 
+}
+
+.selectMenu333:last-child{
+    margin-bottom: 20px;
+}
+.selectMenu333:first-child{
+    margin-top: 20px;
+}
+  
+.itensMenu333 {
+    /* background-color: aqua; */
+  
+    color: #000;
+margin-left: 15px;
+font-family: Gotham Rounded;
+font-size: 0.8rem;
+font-style: normal;
+font-weight: 350;
+line-height: normal;
+padding: 10px;
+border-radius: 20px;
+display: flex;
+align-items: center;
+cursor: pointer;
+transition: all ease-in-out 350ms;
+}
+
+.itensMenu333 img {
+    height: 25px;
+    margin-right: 10px;
+}
+
+.itensMenu333:hover {
+    background-color: var(--amarelolindo);
+}
+
+/* 
+
+.caixaBranca{
+    width: 370px;
+    height: 400px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 2.9px 0px #000;
+    box-sizing: border-box;
+    margin-left: 4rem;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+   
+    
+}
+
+.caixaBranca h2 {
+    color: #000;
+    font-family: Gotham Rounded;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 325;
+    line-height: normal;
+}
+
+.caixaBranca p {
+    color: rgba(0, 0, 0, 0.82);
+    font-family: Gotham Rounded;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+}
+
+.caixaBranca .informacoes {
+    display: flex;
+   
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 29px;
+    color: #000;
+    font-family: Gotham Rounded;
+    font-size: 26.079px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    cursor: pointer;
+}
+
+
+
+.informacoes:hover{
+    background-color: #FFE880;
+    padding: 4px;
+} */
+
+.texto1414 {
+    width: 100%;
+    
+    margin-right: auto;
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+
+}
+
+.texto1414  h2{
+    color: #000;
+    font-family: Gotham Rounded;
+    font-size: 41.379px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+
+.texto1414  p {
+    color: #000;
+    font-family: Gotham Rounded;
+    font-size: 25.095px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    margin-top: 2rem;
+    margin-right: 34vw;
+} 
+.coluna-pedidos {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    margin: 200px auto; /* "auto" para centralizar horizontalmente */
+    text-align: center;
+}
+.coluna-pedidos h2{
+margin-top: -70px;
+font-size: 35px;
+margin-left: -150px;
+
+}
+.cabecalho-pedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    margin-top: -170px;
+}
+.cabecalho-pedido h3{
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: lighter;
+}
+.cabecalho-pedido h4{
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: lighter;
+    margin-left: 140px;
+}
+.cabecalho-pedido h5{
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: lighter;
+    margin-right: 280px;
+}
+
+.linha-separadora {
+    background-color: #000000;
+    height: 2px;
+    width:90%;
+}
+
+.pedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+.pedido h3{
+    font-family: 'Exo 2', sans-serif;  
+    padding-top: 15px;
+}
+
+.pedido h4{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+}
+.pedido h5{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+}
+
+.pedido-dezembro {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+.pedido-dezembro h3{
+    font-family: 'Exo 2', sans-serif;  
+    padding-top: 15px;
+}
+
+.pedido-dezembro h4{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+}
+.pedido-dezembro h5{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+.botao-entregue {
+    background-color: #03BF00;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right:150px;
+    height: 35px;
+    width: 150px;
+
+}
+
+.botao-andamento-amarelo{
+    background-color: #FFF112;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right:150px;
+    height: 35px;
+    width: 150px;
+
+}
+.lista-separadora {
+    background-color: #000000;
+    height: 2px;
+    width: 90%;
+}
+
+
+
+  
+ 

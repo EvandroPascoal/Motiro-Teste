@@ -1,0 +1,2384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motirõ-Montar</title>
+  <link rel="stylesheet" href="css/navbarlogadaCerta.css">
+  <link rel="stylesheet" href="css/montarListaFe.css">
+  <link rel="stylesheet" href="css/arrozMontar.css">
+  <link rel="stylesheet" href="css/feijaoMontar.css">
+  <link rel="stylesheet" href="css/rodape.css">
+  <link rel="stylesheet" href="css/itens222.css">
+  <link rel="icon" href="img/LogoVerdeeee.png" type="image/png">
+
+
+
+  <link rel="stylesheet" href="css/pesquisarLista222.css">
+
+
+</head>
+
+<body>
+  <nav>
+    <div class="logo333">
+        <img  src="img/LogoVerdeQualidade.png" alt="Logo Image">
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="active"><a href="#">Montar Lista</a></li>
+        <li><a href="quemSomos.html">Quem Somos?</a></li>
+
+        <li class="sumiuuu"><a href="meusPedidosStatus.html">Meus Pedidos</a></li>
+        <li   class="sumiuuu"><a href="minhasListasStatus.html">Minhas Listas</a></li>
+        <li class="sumiuuu"><a href="minhasInformacoes.html">Minhas informações</a></li>
+        <li class="sumiuuu"><a href="#">Sair da conta</a></li>
+
+
+        <!-- <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li> -->
+        <!-- <li><button class="login-button" href="#">Entrar</button></li> -->
+        <div class="navbarlogada">
+        <li><button class="join-button" href="#">Bem vindo, Antonio</button></li>
+        <img  onclick="ligarEDesligarDiv();" id="figaraaa" src="img/menuAbrir.png" alt="">
+    </div>
+    </ul>
+</nav>
+
+
+<div class="caixaMenu222">
+<div  class="caixaMenu">
+    <div class="selectMenu">
+        <div class="itensMenu">
+            <img src="img/111vetorcart.png" alt="">
+            <h2><a href="meusPedidosStatus.html">Meus Pedidos</a></h2>
+        </div>
+    </div>
+    <div class="selectMenu">
+        <div class="itensMenu">
+            <img src="img/111vetorlista.png" alt="">
+            <h2><a href="minhasListasStatus.html">Minhas Listas</a></h2>
+        </div>
+    </div>
+    <div class="selectMenu">
+        <div class="itensMenu">
+            <img src="img/111vetorpessoa.png" alt="">
+            <h2><a href="minhasInformacoes.html">Minhas informações</a></h2>
+        </div>
+    </div>
+    <div class="selectMenu">
+        <div class="itensMenu">
+            <img src="img/111sairvetor.png" alt="">
+            <h2>Sair desta conta</h2>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+  <section class="montarLista-container">
+
+    <div class="montarLista-texto">
+      <div class="montarLista-Faltou">
+        <h4>Esqueceu algum produto?<br> adicione mais itens a lista<br><span class="complink-economize23">e continue
+            enchendo sua cesta!</span></h4>
+
+      </div>
+
+      <div class="montarLista-TelaFundo">
+
+
+
+
+        <div class="montarLista-CaixasTexto">
+          <div class="montarLista-ImgTexto">
+            <img src="img/certoParaLista.png" alt="">
+            <h3>Adicione seus itens de supermecado a barra de pesquisa para formar sua lista!
+            </h3>
+          </div>
+
+          <div class="montarLista-ImgTexto">
+            <img src="img/certoParaLista.png" alt="">
+            <h3>Clique em "Pesquisar" quando terminar de listar seus itens.
+            </h3>
+          </div>
+
+          <div class="montarLista-ImgTexto">
+            <img src="img/certoParaLista.png" alt="">
+            <h3>Pronto, agora é só encher sua cesta!
+            </h3>
+
+          </div>
+        </div>
+
+        <img src="img/TelaDeFundo-MontarLista.png" alt="">
+
+      </div>
+
+    </div>
+    <div class="montarLista-esquerda">
+
+
+
+      <div class="listaDePesquisa">
+        <div class="linhaPes333">
+          <div class="linhaPesquisar">
+            <input type="text" id="searchInput" placeholder="Digite sua lista aqui">
+            <button id="add222" onclick="addToList()"> <i class="fa-solid fa-check"></i></button>
+            <img id="logoMercados22" src="img/LogoAssai.png" alt="">
+
+          </div>
+        </div>
+
+        <div class="listados100">
+          <div class="listados">
+            <div id="searchList"></div>
+          </div>
+        </div>
+
+
+        <button id="pesquisar222" style="display:none;" onclick="search()">Pesquisar</button>
+
+      </div>
+
+    </div>
+
+    <div class="montarLista-direita">
+
+      <section class="caixaParaLista">
+        <div class="listacompra">
+          <button id="fechar222"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <p id="MinhaListaTexto">Minha Lista</p>
+          <p id="precoTotaldaLista">R$ 0,00</p>
+          <div id="toggleButton">
+            <img src="img/ListaBrancaaaa.png" alt="">
+          </div>
+          <div id="circuloQuantidade">
+            <h3 id="totalItensDaLista">0</h3>
+          </div>
+        </div>
+        <div id="myDiv" class="hiddenDiv">
+          <div class="itensListaaa">
+
+            <div id="arrozCamilDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/ArrozCamil.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>
+                    Arroz Camil Tipo 1
+
+                  </h5>
+                  <h5> Comum 1Kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 6,69 un.</p>
+                  <div id="contCamil" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ====================================== -->
+
+            <div id="arrozTioJoaoDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/ArrozTioJoão.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Arroz Branco Comum </h5>
+                  <h5> Tipo 1 Tio João 1Kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 7,59 un.</p>
+                  <div id="contTioJoao" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="arrozPratoFinoDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/ArrozPratoFino.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>
+                    Arroz Branco Prato
+
+                  </h5>
+                  <h5> Fino Tipo 1 1Kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 6,69 un.</p>
+                  <div id="contPratoFino" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="arrozSolitoDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/ArrozSolito.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Arroz Branco Tipo 1</h5>
+                  <h5> Solito 1Kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 6,69 un.</p>
+                  <div id="contSolito" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="arrozCamil2Div" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/ArrozCamil.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Arroz Branco Camil </h5>
+                  <h5>Tipo 1 5Kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 28,90 un.</p>
+                  <div id="contCamil2" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="arrozSolito2Div" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/ArrozSolito.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Arroz Branco Solito</h5>
+                  <h5>Tipo 1 5Kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 25,50 un.</p>
+                  <div id="contSolito2" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="arrozPratoFino2Div" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/ArrozPratoFino.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Arroz Branco Prato</h5>
+                  <h5>Fino Tipo 1 5Kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 33,59 un.</p>
+                  <div id="contPratoFino2" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="arrozPanteraDiv" class="itensDaLista">
+
+              <div class="imgDaLista">
+                <img src="img/ArrozPantera.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Arroz Tipo 1 Pantera</h5>
+                  <h5>Premium 5 Kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 27,69 un.</p>
+                  <div id="contPantera" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ====================================== -->
+
+
+
+            <div id="arrozCamilDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/ArrozCamil.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>
+                    Arroz Camil Tipo 1
+
+                  </h5>
+                  <h5> Comum 1Kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 6,69 un.</p>
+                  <div id="contCamil" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- ==================Feijao==================== -->
+
+            <div id="feijaoCariocaDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/FeijaoCamil.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Arroz Branco Comum </h5>
+                  <h5> Tipo 1 Tio João 1Kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 6,19 un.</p>
+                  <div id="contCarioca" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="feijaoKicaldoDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/FeijaoKicaldo.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>
+                    Feijão Kicaldo
+
+                  </h5>
+                  <h5> Comum 1Kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 6,69 un.</p>
+                  <div id="contFeijaoKicaldo" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="feijaoEstrelaDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/Feijão5EstrelasQualidade.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Feijão Carioca Pacote </h5>
+                  <h5>1kg - 5 Estrelas</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 7,59 un.</p>
+                  <div id="contFeijaoEstrela" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div id="feijaoMaximoDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/FeijãoMaximoQualidade.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Feijão Carioca pacote</h5>
+                  <h5>1kg - Super Máximo</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 5,80 un.</p>
+                  <div id="contFeijaoMaaximo" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="feijaoPanteraDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/FeijãoPanteraQualidade.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Feijão Carioca Pacote</h5>
+                  <h5>1kg - Pantera</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 6,70 un.</p>
+                  <div id="contFeijaoPantera" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="feijaoSolitoDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/FeijãoSolitoQualidade.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Feijão Carioca Pacote </h5>
+                  <h5>1kg - Solito</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 5,59 un.</p>
+                  <div id="contFeijaoSolito" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ==================Leite==================== -->
+
+
+            <div id="leiteItalacDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/LeiteItalac.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Leite Integral </h5>
+                  <h5>1 Litro - Italac</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 4,64 un.</p>
+                  <div id="contLeiteItalac" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="leiteAuroraDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="/img/LeiteAurora.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Leite Integral </h5>
+                  <h5>1 Litro - Aurora</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 3,99 un.</p>
+                  <div id="contLeiteAurora" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="leiteItambeDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/LeiteItambe.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Leite Integral </h5>
+                  <h5>1 Litro - Itambé</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 3,99 un.</p>
+                  <div id="contLeiteItambe" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="leiteParmalatDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/LeiteParmalate.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Leite Integral </h5>
+                  <h5>1 Litro - Parmalat</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 7,33 un.</p>
+                  <div id="contLeiteParmalat" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="leiteJussaraDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/LeiteJussara.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Leite Integral </h5>
+                  <h5>1 Litro - Jussara</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 3,39 un.</p>
+                  <div id="contLeiteJussara" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="leitePiracanjubaDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/LeitePiracanjuba.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Leite Integral </h5>
+                  <h5>1 Litro - Piracanjuba</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 3,59 un.</p>
+                  <div id="contLeitePiracanjuba" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <!-- ========================================== -->
+
+            <!-- ==================AÇUCAR==================== -->
+
+
+            <div id="acucarDaBarraDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/AcucarDaBarra.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Açúcar Da Barra </h5>
+                  <h5>Pacote com 1kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 4,19 un.</p>
+                  <div id="contAcucarDaBarra" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="acucarCaravelasDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="/img/AcucarCaravelas.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Açúcar Caravelas </h5>
+                  <h5>Pacote com 1kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 4,98 un.</p>
+                  <div id="contAcucarCaravelas" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="acucarGuaraniDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/AcucarGuarani.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Açúcar Guarani </h5>
+                  <h5>Pacote com 1kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 3,99 un.</p>
+                  <div id="contAcucarGuarani" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="acucarUniaoDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/uniaaaaaaao.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Açúcar União </h5>
+                  <h5>Pacote com 1kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 4,39 un.</p>
+                  <div id="contAcucarUniao" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="acucarGloboDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/AcucarGlobo.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Açúcar Globo </h5>
+                  <h5>Pacote com 1kg</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 4,89 un.</p>
+                  <div id="contAcucarGlobo" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <!-- ========================================== -->
+            <!-- ==================CAFÉ==================== -->
+
+
+            <div id="cafePilaoDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/cafe-pilao.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Café Pilão </h5>
+                  <h5>Tradicional 500g</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 26,99 un.</p>
+                  <div id="contCafePilao" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="cafe3coracoesDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/cafe-3coracoes.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Café 3 Corações</h5>
+                  <h5>Tradicional 500g</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 17,79 un.</p>
+                  <div id="contCafe3coracoes" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="cafeMelittaDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/cafe-melita.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Café em pó Melitta </h5>
+                  <h5>Tradicional 500g</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 17,79 un.</p>
+                  <div id="contCafeMelitta" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="cafeCablocoDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/cafe-cabloco.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Café Cabloco</h5>
+                  <h5>Tradicional 500g</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 16,99 un.</p>
+                  <div id="contCafeCabloco" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="cafeBrasileiroDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/AcucarGlobo.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Café Brasileiro </h5>
+                  <h5>Tradicional 500g</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 12,39 un.</p>
+                  <div id="contCafeBrasileiro" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <!-- ========================================== -->
+            <!-- ==================MACARRÃO==================== -->
+
+
+            <div id="macarraoAdriaDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/macarrao-adria2.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Macarrão Adria </h5>
+                  <h5>Pacote com 500g</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 3,38 un.</p>
+                  <div id="contMacarraoAdria" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="macarraoBarillaDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/macarrao-barila.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Macarrão Barilla </h5>
+                  <h5>Parafuso 500g</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 4,05 un.</p>
+                  <div id="contMacarraoBarilla" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="macarraoDonaBetaDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/macarrao-donaBenta.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Macarrão Dona Benta </h5>
+                  <h5> Parafuso 500g</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 3,19 un.</p>
+                  <div id="contMacarraoDonaBenta" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="macarraoPetybonDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/macarrao-petybon.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+                  <h5>Macarrão Petybon </h5>
+                  <h5>Pacote com 500g</h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 4,29 un.</p>
+                  <div id="contMacarraoPetybon" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="macarraoVitarellaDiv" class="itensDaLista">
+              <div class="imgDaLista">
+                <img src="img/macarrao-vitarela.png" alt="">
+              </div>
+              <div class="conteudoDaLista">
+                <div class="textoItensLista">
+
+                  <h5>Macarrão Vitarella </h5>
+                  <h5>Pacote com 500g </h5>
+                </div>
+                <div class="desconto2">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem2">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="precoMaisMenos">
+                  <p class="precoSomarParaTotal">R$ 2,45 un.</p>
+                  <div id="contMacarraoVitarella" class="maisMenosLista">
+                    <i id="subtrair222" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr2">0</p>
+                    <i id="adicionar222" class="fa-solid fa-plus" style="color: #000000;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <!-- ========================================== -->
+
+          </div>
+          <!-- <p>Conteúdo da div.</p> -->
+          <button class="listar123">Listar</button>
+        </div>
+
+      </section>
+
+
+      <!-- ==================================================================================================== -->
+
+
+
+      <div class="telaItens">
+        <div id="arroz">
+          <div class="produto-fechar">
+            <h2 class="tituloProdutos44">Arroz</h2>
+            <button><i id="botaoFechar" class="fa-solid fa-xmark"></i></button>
+          </div>
+
+
+          <div id="menu">
+
+            <!-- <div id="nav"> -->
+            <div id="prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+
+            <!-- </div> -->
+            <ul id="cards">
+
+              <li id="box1" class="list">
+                <div class="produtos333">
+                  <img src="img/ArrozCamil.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 6,69</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Arroz Camil Tipo 1</h5>
+                  <h5>Comum 1Kg</h5>
+                </div>
+              </li>
+
+
+
+              <li id="box2" class="list">
+
+                <div class="produtos333">
+                  <img src="img/ArrozTioJoão.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 7,59</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Arroz Branco Comum </h5>
+                  <h5>Tipo 1 Tio João 1Kg</h5>
+
+
+                </div>
+
+              </li>
+
+              <li id="box3" class="list">
+
+                <div class="produtos333">
+                  <img src="img/ArrozPratoFino.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 6,69</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Arroz Branco Prato </h5>
+                  <h5>Fino Tipo 1 1Kg</h5>
+                </div>
+
+              </li>
+              <li id="box4" class="list">
+
+
+                <div class="produtos333">
+                  <img src="img/ArrozSolito.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 6,69</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Arroz Branco Tipo 1 </h5>
+                  <h5>Solito 1Kg</h5>
+                </div>
+
+              </li>
+              <li id="box5" class="list">
+
+                <div class="produtos333">
+                  <img src="img/ArrozCamil.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 28,90</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Arroz Branco Camil </h5>
+                  <h5>Tipo 1 5Kg</h5>
+                </div>
+
+              </li>
+              <li id="box6" class="list">
+
+                <div class="produtos333">
+                  <img src="img/ArrozSolito.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 25,50</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Arroz Branco Solito</h5>
+                  <h5>Tipo 1 5Kg</h5>
+                </div>
+
+              </li>
+              <li id="box7" class="list">
+
+                <div class="produtos333">
+                  <img src="img/ArrozPratoFino.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 33,59</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Arroz Branco Prato </h5>
+                  <h5>Fino Tipo 1 5Kg</h5>
+                </div>
+
+              </li>
+
+
+              <li id="box8" class="list">
+
+                <div class="produtos333">
+                  <img src="img/ArrozPantera.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 27,69</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Arroz Tipo 1 Pantera</h5>
+                  <h5>Premium 5 Kg</h5>
+                </div>
+
+              </li>
+
+
+
+
+
+
+
+            </ul>
+            <div id="next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- ===========================FEIJÃO================================================ -->
+
+
+
+        <div id="feijao">
+          <div class="produto-fechar">
+            <h2 class="tituloProdutos44">Feijão</h2>
+            <button><i id="botaoFecharFeijao" class="fa-solid fa-xmark"></i></button>
+          </div>
+
+
+          <div id="menu">
+
+            <!-- <div id="nav"> -->
+            <div id="prev-feijao">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+
+            <!-- </div> -->
+            <ul id="cards-feijao">
+
+              <li id="box9" class="list">
+                <div class="produtos333">
+                  <img src="img/FeijaoCamil.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 6,19</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Feijão Carioca Pacote </h5>
+                  <h5>1kg - Camil</h5>
+                </div>
+              </li>
+
+
+
+              <li id="box10" class="list">
+
+                <div class="produtos333">
+                  <img src="img/FeijaoKicaldo.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 7,69</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Feijao Kicaldo</h5>
+                  <h5>Premium 5 Kg</h5>
+                </div>
+
+              </li>
+
+              <li id="box3-feijao" class="list">
+
+                <div class="produtos333">
+                  <img src="img/Feijão5EstrelasQualidade.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 7,59</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Feijão Carioca Pacote </h5>
+                  <h5>1kg - 5 Estrelas</h5>
+                </div>
+
+              </li>
+
+
+
+              <li id="box4-feijao" class="list">
+
+                <div class="produtos333">
+                  <img src="img/FeijãoMaximoQualidade.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 5,80</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Feijão Carioca pacote</h5>
+                  <h5>1kg - Super Máximo</h5>
+                </div>
+
+              </li>
+
+
+
+              <li id="box5-feijao" class="list">
+
+                <div class="produtos333">
+                  <img src="img/FeijãoPanteraQualidade - Copia.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 6,70</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Feijão Carioca Pacote</h5>
+                  <h5>1kg - Pantera</h5>
+                </div>
+
+              </li>
+
+              <li id="box6-feijao" class="list">
+
+                <div class="produtos333">
+                  <img src="img/FeijãoSolitoQualidade.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 5,59</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Feijão Carioca Pacote </h5>
+                  <h5>1kg - Solito</h5>
+                </div>
+
+              </li>
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+            <div id="next-feijao">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- ===========================AÇUCAR================================================ -->
+
+
+
+        <div id="acucar">
+          <div class="produto-fechar">
+            <h2 class="tituloProdutos44">Açucar</h2>
+            <button><i id="botaoFecharAcucar" class="fa-solid fa-xmark"></i></button>
+          </div>
+
+
+          <div id="menu">
+
+            <!-- <div id="nav"> -->
+            <div id="prev-acucar">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+
+            <!-- </div> -->
+            <ul id="cards-acucar">
+
+              <li id="box1-acucar" class="list">
+                <div class="produtos333">
+                  <img src="img/AcucarDaBarra.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 4,19</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Açúcar Da Barra</h5>
+                  <h5>Pacote com 1kg</h5>
+                </div>
+              </li>
+
+
+
+              <li id="box2-acucar" class="list">
+
+                <div class="produtos333">
+                  <img src="img/AcucarCaravelas.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 4,98</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Açúcar Caravelas </h5>
+                  <h5>Pacote com 1kg</h5>
+                </div>
+
+              </li>
+
+              <li id="box3-acucar" class="list">
+
+                <div class="produtos333">
+                  <img src="img/AcucarGuarani.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 3,99</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Açucar Guarani </h5>
+                  <h5>Pacote com 1kg</h5>
+                </div>
+
+              </li>
+
+
+
+              <li id="box4-acucar" class="list">
+
+                <div class="produtos333">
+                  <img src="img/uniaaaaaaao.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 4,39</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Açúcar União </h5>
+                  <h5>Pacote com 1kg</h5>
+                </div>
+
+              </li>
+
+              <li id="box5-acucar" class="list">
+
+                <div class="produtos333">
+                  <img src="img/AcucarGlobo.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 4,89</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Açucar Globo </h5>
+                  <h5>Pacote com 1kg</h5>
+                </div>
+
+              </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+            <div id="next-acucar">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div id="cafe">
+          <div class="produto-fechar">
+            <h2 class="tituloProdutos44">Café</h2>
+            <button><i id="botaoFecharCafe" class="fa-solid fa-xmark"></i></button>
+          </div>
+
+
+          <div id="menu">
+
+            <!-- <div id="nav"> -->
+            <div id="prev-cafe">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+
+            <!-- </div> -->
+            <ul id="cards-cafe">
+
+              <li id="box1-cafe" class="list">
+                <div class="produtos333">
+                  <img src="img/cafe-pilao.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 26,99</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Café Pilão </h5>
+                  <h5>Tradicional 500g</h5>
+                </div>
+              </li>
+
+
+
+              <li id="box2-cafe" class="list">
+
+                <div class="produtos333">
+                  <img src="img/cafe-3coracoes.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 17,79</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Café 3 Corações</h5>
+                  <h5>Tradicional 500g</h5>
+                </div>
+
+              </li>
+
+              <li id="box3-cafe" class="list">
+
+                <div class="produtos333">
+                  <img src="img/cafe-melita.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 17,79</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Café em Pó Melitta </h5>
+                  <h5>Tradicional 500g</h5>
+                </div>
+
+              </li>
+
+
+
+              <li id="box4-cafe" class="list">
+
+                <div class="produtos333">
+                  <img src="img/cafe-cabloco.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 16,99</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Café Caboclo </h5>
+                  <h5>Tradicional 500g</h5>
+                </div>
+
+              </li>
+
+
+
+              <li id="box5-cafe" class="list">
+
+                <div class="produtos333">
+                  <img src="img/cafe-brasileiro.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 12,39</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Café Brasileiro </h5>
+                  <h5>Tradicional 500g</h5>
+                </div>
+
+              </li>
+
+
+
+
+
+
+
+            </ul>
+            <div id="next-cafe">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div id="leite">
+          <div class="produto-fechar">
+            <h2 class="tituloProdutos44">Leite</h2>
+            <button><i id="botaoFecharLeite" class="fa-solid fa-xmark"></i></button>
+          </div>
+
+
+          <div id="menu">
+
+            <!-- <div id="nav"> -->
+            <div id="prev-leite">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+
+            <!-- </div> -->
+            <ul id="cards-leite">
+
+              <li id="box1-leite" class="list">
+                <div class="produtos333">
+                  <img src="img/LeiteItalac.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 4,64</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Leite Integral </h5>
+                  <h5>1 Litro - Italac</h5>
+                </div>
+              </li>
+
+
+
+              <li id="box2-leite" class="list">
+
+                <div class="produtos333">
+                  <img src="img/LeiteAurora.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 3,99</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Leite Integral </h5>
+                  <h5>1 Litro - Aurora</h5>
+                </div>
+
+              </li>
+
+              <li id="box3-leite" class="list">
+
+                <div class="produtos333">
+                  <img src="img/LeiteItambe.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 3,99</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Leite Integral </h5>
+                  <h5>1 Litro - Itambé</h5>
+                </div>
+
+              </li>
+
+
+
+              <li id="box4-leite" class="list">
+
+                <div class="produtos333">
+                  <img src="img/LeiteParmalate.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 7,33</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Leite Integral </h5>
+                  <h5>1 Litro - Parmalat</h5>
+                </div>
+
+              </li>
+
+
+
+              <li id="box5-leite" class="list">
+
+                <div class="produtos333">
+                  <img src="img/LeitePiracanjuba.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 3,59</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Leite Integral </h5>
+                  <h5>1 Litro - Piracanjuba</h5>
+                </div>
+
+              </li>
+
+              <li id="box6-leite" class="list">
+
+                <div class="produtos333">
+                  <img src="img/LeiteJussara.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 3,39</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Leite Integral </h5>
+                  <h5>1 Litro - Jussara</h5>
+                </div>
+
+              </li>
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+            <div id="next-leite">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="macarrao">
+          <div class="produto-fechar">
+            <h2 class="tituloProdutos44">Macarrão</h2>
+            <button><i id="botaoFecharMacarrao" class="fa-solid fa-xmark"></i></button>
+          </div>
+
+
+          <div id="menu">
+
+            <!-- <div id="nav"> -->
+            <div id="prev-macarrao">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+
+            <!-- </div> -->
+            <ul id="cards-macarrao">
+
+              <li id="box1-macarrao" class="list">
+                <div class="produtos333">
+                  <img src="img/macarrao-adria2.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 3,38</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Macarrão Adria </h5>
+                  <h5>Pacote com 500g</h5>
+                </div>
+              </li>
+
+
+
+              <li id="box2-macarrao" class="list">
+
+                <div class="produtos333">
+                  <img src="img/macarrao-barila.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 4,05</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Macarrão Barilla </h5>
+                  <h5>Parafuso 500g</h5>
+                </div>
+
+              </li>
+
+              <li id="box3-macarrao" class="list">
+
+                <div class="produtos333">
+                  <img src="img/macarrao-donaBenta.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 3,19</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Macarrão Dona Benta </h5>
+                  <h5> Parafuso 500g</h5>
+                </div>
+
+              </li>
+
+
+
+              <li id="box4-macarrao" class="list">
+
+                <div class="produtos333">
+                  <img src="img/macarrao-petybon.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 4,29</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Macarrão Petybon </h5>
+                  <h5>Pacote com 500g</h5>
+                </div>
+
+              </li>
+
+
+
+              <li id="box5-macarrao" class="list">
+
+                <div class="produtos333">
+                  <img src="img/macarrao-vitarela.png" alt="">
+                  <div class="menosMais">
+                    <i id="subtrair" class="fa-solid fa-minus" style="color: #000000;"></i>
+                    <p id="contadorrr">0</p>
+
+                  </div>
+                  <i id="adicionar" class="fa-solid fa-plus" style="color: #000000;"></i>
+                </div>
+                <h3>R$ 2,45</h3>
+                <div class="desconto">
+                  <p>acima de 6 un.</p>
+                  <div class="desconto-porcentagem">
+                    <p> -10%</p>
+                  </div>
+                </div>
+                <div class="h555">
+                  <h5>Macarrão Vitarella </h5>
+                  <h5>Pacote com 500g </h5>
+                </div>
+
+              </li>
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+            <div id="next-macarrao">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+
+  </section>
+
+  <footer class="footer1">
+    <div class="looogoo1">
+      <div class="logorodape1">
+        <img src="img/LogoVerdeQualidade.png" alt="">
+      </div>
+    </div>
+    <div class="container111 row1">
+      <div class="footer-col1 noss1">
+        <h4>Mapa do Site</h4>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Montar Lista</a></li>
+          <li><a href="#">Perfil</a></li>
+          <li><a href="#">Quem somos?</a></li>
+        </ul>
+      </div>
+      <!-- <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+            </ul>
+        </div> -->
+      <div class="footer-col1">
+        <h4>Nossos Contatos</h4>
+        <ul>
+
+          <li><a href="#">suportemotiro@gmail.com</a></li>
+          <li><a href="#">(11) 91457-6257</a></li>
+          <!-- <li><a href="#">github</a></li>
+                <li><a href="#">all version</a></li> -->
+        </ul>
+      </div>
+      <div class="footer-col1 noss1">
+        <h4>Siga-nos</h4>
+        <div class="social-links1">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="fimrodape1">
+      <h3>2023. Motirõ. Todos direitos reservados.</h3>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="js/navbarlogada.js"></script>
+  <script src="js/montaListaFe.js"></script>
+  <script src="js/montaListaArroz.js"></script>
+  <script src="https://kit.fontawesome.com/42dd8431f9.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

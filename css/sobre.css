@@ -1,0 +1,499 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+:root {
+	--amareloxoxo: #EDBB6C;
+	--verdexoxo: #004F40;
+	--laranjaaa: #FF8215;
+	--amarelolindo: #FFE880;
+}
+
+
+.nav-links{
+	margin-top: 15px;
+   
+}
+
+
+.sobreQuemSomos {
+	background: url(../img/fundoggg.png);
+	padding: 5rem 2rem 5rem 2rem;
+}
+
+.quemSomosTopo {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin: 20px auto;
+	background-color: var(--verdexoxo);
+	border: 4px solid white;
+	
+}
+
+.quemSomosTopo h2 {
+	font-weight: bold;
+	font-size: 3.125rem;
+	margin-bottom: 15px;
+}
+
+.quemSomosTopo p {
+	font-size: 1.25rem;
+	color: white;
+	font-weight: bolder;
+	margin-bottom: 35px;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 3%;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.imagemEtexto {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.sobreimg {
+	flex: 1;
+	margin-right: 40px;
+	overflow: hidden;
+	border: var(--verdexoxo) solid 7px;
+	border-radius: 30px;
+}
+
+.sobreimg img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	transition: 0.5s ease;
+}
+
+.sobreimg:hover img {
+	transform: scale(1.2);
+}
+
+.objetivo {
+	flex: 1;
+	font-size: 1.92rem;
+	text-align: justify;
+	font-weight: 700;
+}
+
+.devs {
+	background: url(../img/fundoggg.png);
+}
+
+.devs h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	font-weight: bold;
+	font-size: 3.125rem;
+	padding-bottom: 15px;
+}
+
+.identidadeVisual {
+	box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+}
+
+.significado {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(../img/sobre-compra.png);
+	height: 50vh;
+	display: flex;
+	align-items: center;
+
+}
+
+.significado h2 {
+	color: white;
+	margin-left: 28px;
+	font-size: 2.5rem;
+	margin-right: 60px;
+}
+
+.significado p {
+	background-color: var(--amareloxoxo);
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.cores {
+	background-color: white;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+.logos {
+	flex: 1;
+	margin-right: 40px;
+}
+
+.logoVerde {
+	display: flex;
+	align-items: center;
+}
+
+.logoAmarelo {
+	display: flex;
+	align-items: center;
+}
+
+.logoVerde img {
+	width: 40%;
+	margin: 20px;
+}
+
+.logoVerde p {
+	margin-left: 50px;
+	font-size: 1.8rem;
+}
+
+.logoVerde span {
+	width: 15px;
+	height: 15px;
+	color: var(--verdexoxo);
+	background-color: var(--verdexoxo);
+}
+
+.logoAmarelo img {
+	width: 40%;
+	margin: 20px;
+}
+
+.logoAmarelo p {
+	margin-left: 40px;
+	margin-right: 70px;
+	font-size: 1.8rem;
+}
+
+.logoAmarelo span {
+	width: 15px;
+	height: 15px;
+	color: var(--amareloxoxo);
+	background-color: var(--amareloxoxo);
+}
+
+.textos {
+	flex: 1;
+	flex-direction: column;
+}
+
+.textos p {
+	font-size: 30px;
+	color: black;
+}
+
+.p1 {
+	margin-top: 15px;
+	margin-bottom: 45px;
+}
+
+.p2 {
+	margin-bottom: 45px;
+}
+
+.sobreMonetizacao h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	font-weight: bold;
+	font-size: 3.125rem;
+	padding-bottom: 30px;
+}
+
+.sobreMonetizacao {
+	background: url(../img/fundoggg.png);
+	padding: 5rem 2rem 5rem 2rem;
+}
+
+.monetizaimg {
+	flex: 1;
+	margin-right: 40px;
+	overflow: hidden;
+	border: var(--verdexoxo) solid 7px;
+	border-radius: 30px;
+}
+
+.monetizaimg img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	transition: 0.5s ease;
+}
+
+.monetizaimg:hover img {
+	transform: scale(1.2);
+}
+
+
+.sobreVisaoFuturo h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	font-weight: bold;
+	font-size: 3.125rem;
+	padding-bottom: 30px;
+}
+
+.sobreVisaoFuturo {
+	background: url(../img/fundoggg.png);
+	padding: 5rem 2rem 5rem 2rem;
+}
+
+.visaoftimg {
+	flex: 1;
+	margin-right: 40px;
+	overflow: hidden;
+	border: var(--verdexoxo) solid 7px;
+	border-radius: 30px;
+}
+
+.visaoftimg img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	transition: 0.5s ease;
+}
+
+.visaoftimg:hover img {
+	transform: scale(1.2);
+}
+
+.missaoVisaoValores {
+	background: url(../img/fundoggg.png);
+	padding: 5rem 2rem 5rem 2rem;
+}
+
+.missaoVisaoValores h3 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2.125rem;
+	padding: 30px;
+}
+
+.card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.mvv {
+	flex: 1;
+	font-size: 1.25rem;
+	padding: 20px;
+	border: solid 3px #EDBB6C;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px 0px #004F40;
+}
+
+.missaoimg {
+	flex: 1;
+	margin-right: 40px;
+	overflow: hidden;
+	border: var(--verdexoxo) solid 7px;
+	border-radius: 100%;
+}
+
+.missaoimg img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.visaoimg {
+	flex: 1;
+	margin-right: 40px;
+	overflow: hidden;
+	border: var(--verdexoxo) solid 7px;
+	border-radius: 100%;
+}
+
+.visaoimg img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.valoresimg {
+	flex: 1;
+	margin-right: 40px;
+	overflow: hidden;
+	border: var(--verdexoxo) solid 7px;
+	border-radius: 100%;
+}
+
+.valoresimg img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+@media screen and (max-width: 800px) {
+	p {
+		font-size: 1rem;
+	}
+
+	.quemSomosTopo {
+		padding: 0px 20px;
+	}
+
+	.quemSomosTopo h2 {
+		font-size: 2.25rem;
+	}
+
+	.quemSomosTopo p {
+		font-size: 1rem;
+		margin-bottom: 0px;
+	}
+
+	.container {
+		padding: 0px;
+	}
+
+	.imagemEtexto {
+		padding: 20px;
+		flex-direction: column;
+	}
+
+	.sobreimg {
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+
+	.objetivo {
+		padding: 0px;
+		font-size: 1rem;
+	}
+
+	.devs h1 {
+		font-size: 2.25rem;
+	}
+
+	.significado {
+		height: 60vh;
+	}
+
+	.significado h2 {
+		font-size: 1.75rem;
+		margin-left: 10px;
+		margin-right: 15px;
+	}
+
+	.significado p {
+		padding: 5px;
+		font-size: 1rem;
+		max-height: 300px;
+		text-align: center;
+	}
+
+	.cores {
+		flex-direction: column;
+	}
+
+	.logoVerde img {
+		width: 30%;
+		margin: 20px 0 0 25px;
+	}
+
+	.logoVerde p {
+		font-size: 1.4rem;
+		margin-left: 30px;
+	}
+
+	.logoAmarelo img {
+		width: 30%;
+		margin: 0;
+	}
+
+	.logoAmarelo p {
+		font-size: 1.4rem;
+		margin-right: 30px;
+		margin-left: 25px;
+	}
+
+	.textos {
+		margin: 25px;
+		text-align: justify;
+	}
+
+	.textos p {
+		font-size: 1rem;
+	}
+
+	.sobreMonetizacao {
+		padding: 0px 20px;
+	}
+
+	.sobreMonetizacao h2 {
+		font-size: 2.25rem;
+	}
+
+	.monetizaimg {
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+
+	.sobreVisaoFuturo {
+		padding: 0px 20px;
+	}
+
+	.sobreVisaoFuturo h2 {
+		font-size: 2.25rem;
+	}
+
+	.visaoftimg {
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card {
+		padding: 20px;
+		flex-direction: column;
+	}
+
+	.missaoimg {
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+
+	.visaoimg {
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+
+	.valoresimg {
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+}

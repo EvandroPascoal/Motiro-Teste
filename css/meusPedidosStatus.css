@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --amareloxoxo: #EDBB6C;
+    --verdexoxo: #004F40;
+    --laranjaaa: #FF8215;
+    --amarelolindo: #FFE880;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.m-pedidos {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fundoggg.png);
+    display: flex;
+}
+.m-pedidos-tela {
+    height: 100%;
+    width: clamp(50%, 70%, 80%);
+  /* background-color: #03BF00; */
+   
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.m-pedidos-esquerda {
+    width: 30rem;
+    /* background-color: #FF8215; */
+    height: 100%;
+  
+   
+    
+}
+
+.caixaMenu333 {
+
+    width: 18.125rem;
+height: auto;
+background-color: rgb(255, 255, 255);
+border-radius: 2.25rem;
+margin-left: 5.9vw;
+
+display: flex;
+
+flex-direction: column;
+
+margin-top: 12rem;
+
+
+
+
+box-shadow: 0px 0px 3px 0px #000;
+transition: display 0.8s ease;
+
+
+}
+
+.nome444 {
+    color: rgba(0, 0, 0, 0.82);
+       font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+
+.nome777 {
+    margin-top: 20px;
+    color: #000;
+       font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 325;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+
+  #ativad000 {
+
+    background-color: var(--amarelolindo);
+    padding: 10px;
+border-radius: 20px;
+
+  }
+
+.selectMenu333 {
+   
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+ 
+}
+
+.selectMenu333:last-child{
+    margin-bottom: 20px;
+}
+.selectMenu333:first-child{
+    margin-top: 20px;
+}
+  
+.itensMenu333 {
+ 
+    color: #000;
+margin-left: 15px;
+   font-family: 'gotham-rounded-book', sans-serif;
+font-size: 0.8rem;
+font-style: normal;
+font-weight: 350;
+line-height: normal;
+padding: 10px;
+border-radius: 20px;
+display: flex;
+align-items: center;
+cursor: pointer;
+transition: all ease-in-out 350ms;
+}
+
+.itensMenu333 img {
+    height: 25px;
+    margin-right: 10px;
+}
+
+.itensMenu333:hover {
+    background-color: var(--amarelolindo);
+}
+
+.texto1414 {
+    width: 100%;
+    
+    
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #FF8215; */
+  
+
+}
+
+.texto1414  h2{
+    color: #000;
+    font-family: 'gotham-rounded-book', sans-serif;   
+    font-size: 41.379px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   
+
+}
+
+.linha-pedidos {
+    width: 100%;
+    height: auto;
+    /* background-color: #FF8215; */
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.grupo-listass button {
+    margin-top: 57%;
+    width: 100px;
+    height: 40px;
+    border-style: none;
+    outline-style: none;
+    background-color: #004F40;
+    color: #fff;
+    border-radius: 10px;
+       font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 18.095px;
+    font-style: normal;
+    font-weight: 550;
+    margin-right: 30px;
+    cursor: pointer;
+
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+.grupo-listass2 button {
+
+    margin-top: 10%;
+    width: 100px;
+    height: 40px;
+    border-style: none;
+    outline-style: none;
+    background-color: #EDBB6C;
+    color: #000000;
+    border-radius: 10px;
+    font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 12.095px;
+    font-style: normal;
+    font-weight: 550;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+
+.grupo-listass2 button:hover {
+    background-color: #004F40;
+    color: #ffffff;
+}
+
+.grupo-listass button:hover {
+    background-color: #EDBB6C;
+    color: #000;
+}
+
+.grupo-listass {
+    width: auto;
+    height: auto;
+    /* background-color: aqua; */
+   
+}
+
+
+.grupo-listass:nth-child(2) {
+    /* background-color: #EDBB6C; */
+    width: 46px;
+}
+
+.grupo-listass:nth-child(3) {
+    /* background-color: #EDBB6C; */
+    width: 150px;
+}
+
+.grupo-listass p {
+    margin-top: 40px;
+       font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 20.095px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: normal;
+    margin-right: auto;
+
+}
+
+.linhaDivisoria {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    z-index: 300;
+}
+
+.linhaDivisoria:last-child {
+    margin-top: 5px;
+}
+
+.grupo-listass h3 {
+    margin-top: 30px;
+    color: #000;
+       font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 20.095px;
+    font-style: normal;
+    font-weight: 540;
+    text-align: center;
+
+
+}
+
+#figaraaa {
+    display: none;
+}
+
+.active {
+    display: none;
+}
+
+.botaoOff {
+    display:none;
+}
+
+
+.grupo-listass .botaoOff2 {
+    display:none;
+
+
+    margin-top: 6%;
+    width: 100px;
+    height: 30px;
+    outline-style: none;
+    background-color: #EDBB6C;
+    color: #000000;
+    border-radius: 10px;
+    font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 12.095px;
+    font-style: normal;
+    font-weight: 550;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  
+    
+}
+
+.grupo-listass .botaoOff2:hover {
+    background-color: #004F40;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 970px) {
+    
+    .active {
+        display: block;
+    }
+
+    .grupo-listass:nth-child(2) {
+      
+        width: 38px;
+    }
+    
+    .grupo-listass:nth-child(3) {
+      
+        width: 120px;
+    }
+    
+
+  
+
+    .caixaMenu333 {
+        display: none;
+    }
+
+  
+
+    .m-pedidos-tela {
+        height: 100%;
+        width: 100%;
+      /* background-color: #03BF00; */
+       
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .m-pedidos-esquerda {
+        width: 30%;
+        display:none;
+        height: 100%;
+       
+      
+       
+        
+    }
+
+    .grupo-listass2 button {
+
+        margin-top: 8%;
+        width: 100px;
+        height: 40px;
+        border-style: none;
+        outline-style: none;
+        
+        border-radius: 10px;
+        font-family: 'gotham-rounded-book', sans-serif;
+     
+        font-style: normal;
+        font-weight: 550;
+        margin-right: 30px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    
+    }
+
+
+
+    .grupo-listass button {
+        margin-top: 50%;
+    width: 100px;
+    height: 40px;
+    border-style: none;
+    outline-style: none;
+    background-color: #004F40;
+    color: #fff;
+    border-radius: 10px;
+       font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 18.095px;
+    font-style: normal;
+    font-weight: 550;
+    margin-right: 30px;
+    cursor: pointer;
+
+    transition: 0.3s ease-in-out;
+   
+    }
+    
+    .grupo-listass {
+        width: auto;
+        height: auto;
+        /* background-color: aqua; */
+       
+    }
+    
+    
+    .grupo-listass p {
+        margin-top: 40px;
+           font-family: 'gotham-rounded-book', sans-serif;
+        font-size: 16.095px;
+        font-style: normal;
+        font-weight: 250;
+        line-height: normal;
+        margin-right: auto;
+    
+    }
+    
+    .grupo-listass h3 {
+        margin-top: 30px;
+        color: #000;
+           font-family: 'gotham-rounded-book', sans-serif;
+        font-size: 16.095px;
+        font-style: normal;
+        font-weight: 540;
+        text-align: center;
+    
+    
+    }
+
+   
+
+}
+
+
+  
+
+@media screen and (max-width: 460px) { 
+
+    .grupo-listass button {
+        margin-top: 6%;
+        width: 100px;
+        height: 30px;
+        border-style: none;
+        outline-style: none;
+        background-color: #004F40;
+        color: #fff;
+        border-radius: 10px;
+        font-family: 'gotham-rounded-book', sans-serif;
+        font-size: 16.095px;
+        font-style: normal;
+        font-weight: 550;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    .botaoON {
+        display: none;
+    }
+
+    .botaoOff {
+        margin-top: 0%;
+        display:block;
+    }
+
+   .grupo-listass .botaoOff2 {
+        margin-top: 6%;
+        width: 100px;
+        height: 30px;
+        outline-style: none;
+        background-color: #EDBB6C;
+        color: #000000;
+        border-radius: 10px;
+        font-family: 'gotham-rounded-book', sans-serif;
+        font-size: 12.095px;
+        font-style: normal;
+        font-weight: 550;
+        margin-right: 30px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        display: block;
+        
+    }
+    
+    
+    
+    
+
+
+
+}
+
+
+
+  
+ 

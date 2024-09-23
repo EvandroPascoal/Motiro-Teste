@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.looogoo1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vw;
+    margin-top: 4vw;
+    
+}
+
+.logorodape1 img {
+    display: flex;
+    align-items: center;
+    width: clamp(150px, 30vw, 200px); 
+}
+
+.footer1::before,
+.footer1::after {
+    box-sizing: border-box;
+}
+
+.footer1 {
+    background-color: #EDBB6C;
+    /* padding: 80px 0; */
+    line-height: 1.5;
+    font-family: 'Gotham Rounded', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.container111 {
+    width: 100%;
+    margin: auto;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col1 h4 {
+    font-size: 18px;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col1 h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #004F40;
+    width: 50px;
+    height: 2px;
+}
+
+.footer-col1 ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col1 ul li a {
+    color: #000000;
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-col1 ul li a:hover {
+    color: #ffffff;
+    
+}
+
+.footer-col1 .social-links1 a {
+    color: #ffffff;
+    background-color: #004F40;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    transition: all 0.5s ease;
+    margin-top: 3vw;
+}
+
+.footer-col1 .social-links1 a:hover {
+    color: #151515;
+    background-color: #f7f7f7;
+}
+
+.fimrodape1 {
+    color: #FFF;
+    background-color: #000000;
+    width: 100%;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Exemplo de valores, ajuste conforme necessário */
+    margin-top: 6vw;
+    font-size: clamp(0.5s, 1vw, 2rem);
+}
+
+@media(max-width: 973px) {
+	.footer-col1 {
+		width: 50%;
+        margin-top: 4vw;
+		margin-bottom: 30px;
+     margin-right: auto;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col1 {
+		width: 100%;
+	}
+}

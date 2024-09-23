@@ -1,0 +1,585 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    
+
+}
+
+
+:root {
+    --amareloxoxo: #EDBB6C;
+    --verdexoxo: #004F40;
+    --laranjaaa: #FF8215;
+    --amarelolindo: #FFE880;
+}
+
+.cobrirOferta-fundo {
+    
+    display: flex;
+   
+
+
+    height: 100vh;
+    background: url(../img/fundoggg.png);
+ 
+  
+
+}
+
+.cobrirOferta-esquerdo {
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.separar-listas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.cobrirOferta-direito {
+    width: 50%;
+    height: 100%;
+    
+    /* margin-left: auto; */
+    background: url(../img/cobrirOfertaMulher.webp);
+    background-size: cover;
+    background-position: center; /* Opcional: centraliza a imagem na tela */
+}
+
+.cobrirOferta-fundoopaciti {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.504);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center; 
+
+}
+
+.cobrirOferta-TextoDireita h2 {
+
+    color: #FFF;
+    margin-top: 50px;
+    font-family: 'gotham-rounded-book', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 520;
+    line-height: normal;
+
+}
+
+.cobrirOferta-lista {
+    width: 320px;
+    height: auto;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 1px 0px #000 inset;
+    border-radius: 20px;
+
+}
+
+.cobrirOferta-Topo {
+    width: 100%;
+    height: 70px;
+    background-color: #004F40;
+    border-radius: 20px;
+    box-shadow: 0px 0px 1px 0px #000 inset;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cobrirOferta-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 100%;
+    /* background-color: rgb(68, 0, 255); */
+}
+
+.cobrirOferta-titulo h3 {
+    font-family: 'Gotham Rounded', sans-serif;
+    color: #fff;
+    font-size:16px;
+    font-style: normal;
+    font-weight: 510;
+}
+.cobrirOferta-preco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86px;
+    height: 100%;
+    /* background-color: rgb(255, 204, 0); */
+}
+
+.cobrirOferta-preco h3 {
+    
+    font-family: 'Gotham Rounded', sans-serif;
+    color: #fff;
+    font-size:16px;
+    font-style: normal;
+    font-weight: 510;
+}
+
+.cobrirOferta-Simbolo {
+    margin-right: 16px;
+    /* background-color: #FF8215; */
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Estiliza toda a barra de rolagem */
+.cobrirOferta-meioItens::-webkit-scrollbar {
+    width: 8px;               /* Largura da scrollbar */
+    height: 12px;              /* Altura da scrollbar horizontal */
+    /* Adiciona espaçamento entre o conteúdo e a barra de rolagem */ 
+ 
+  
+    
+  }
+  
+  
+  /* Estiliza o "polegar" (thumb) da scrollbar */
+  .cobrirOferta-meioItens::-webkit-scrollbar-thumb {
+    background-color: #888;     /* Cor do thumb (barra que se move) */
+    border-radius: 10px;        /* Bordas arredondadas do thumb */
+  }
+  
+  /* Estiliza o thumb ao passar o mouse sobre ele */
+  .cobrirOferta-meioItens::-webkit-scrollbar-thumb:hover {
+    background-color: #555;     /* Cor ao passar o mouse */
+  }
+  
+  /* Estiliza os botões de setas (caso existam) */
+  .cobrirOferta-meioItens::-webkit-scrollbar-button {
+    background-color: #e2000000;     /* Cor dos botões de setas */
+    display: none;
+  }
+
+
+.cobrirOferta-meioItens {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 310px;
+    /* background-color: #EDBB6C; */
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+
+.listaMercado-cardProdutos {
+    /* margin-top: 2vw; */
+    width: 85%;
+    height: 100px;
+    background-color: #ffffff;
+    flex-shrink: 0;
+  
+    border-radius: 10px;
+    border: 1px solid #777777;
+    display: flex;
+    margin-bottom: 10px;
+   
+}
+
+.listaMercado-cardProdutos:last-child {
+    
+    margin-bottom: 0px;
+   
+}
+
+.listaMercado-imagem {
+    height: 100%;
+    width: 100px;
+    background-color: transparent;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #777777;
+}
+
+.listaMercado-imagem img{
+    height: 90%;
+}
+
+.listaMercado-direita {
+    width: 65%;
+    /* background-color: aqua; */
+}
+
+
+.listaMercado-cima {
+    width: 100%;
+    height: 50%;
+    /* background-color: chocolate; */
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.listaMercado-baixo {
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(30, 210, 54); */
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.preco-desconto {
+    /* background-color: #00ffd0; */
+    width: 130px;
+    height: 100%;
+}
+
+.desconto {
+    width: 100%;
+    height: 60%;
+    /* background-color: #EDBB6C; */
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desconto p {
+
+    color: #000000;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+   
+}
+
+.desconto-porcentagem {
+    height: 80%;
+    width: 38px;
+    background-color: rgb(9, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 13px;
+    margin-right: 4px;
+}
+
+.desconto-porcentagem p {
+
+    color: #000000;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+
+
+}
+
+.listaMercado-quantidade {
+    margin-left: auto;
+    width: 30px;
+    height: 70%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    
+}
+
+.listaMercado-quantidade p {
+margin-right: 2px;
+}
+
+
+
+.listaMercado-cima p {
+    margin-left: 3px;
+}
+
+.listaMercado-baixo p {
+    margin-left: 3px;
+}
+.cobrirOferta-baixo {
+
+    width: 100%;
+    height: 70px;
+    /* background-color: #ff0000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+
+#botao-editar {
+    width: 120px;
+    height: 80%;
+    border-radius: 20px;
+    background-color: #004F40;
+    color: #fff;
+    outline-style: none;
+    border-style: none;
+    cursor: pointer;
+
+   
+    font-family: 'Gotham Rounded', sans-serif;
+    
+    font-size:15px;
+    font-style: normal;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+}
+
+#botao-editar:hover {
+    background-color: #00ffd0;
+    color: #000;
+    box-shadow: 0px 0px 1px 0px #000 inset;
+}
+
+#botao-cobrir {
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #EDBB6C;
+    color: #000000;
+    outline-style: none;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 4vw;
+
+   
+    font-family: 'Gotham Rounded', sans-serif;
+    
+    font-size:20px;
+    font-style: normal;
+    font-weight: 550;
+    transition: 0.3s ease-in-out;
+}
+
+#botao-cobrir:hover {
+    background-color: #FFE880;
+    color: #000;
+    box-shadow: 0px 0px 1px 0px #000 inset;
+}
+
+.complink-economize {
+    color: #000;
+    background-color: #00ffd0;
+    padding: 0vw 0.5vw 0vw 0.5vw;
+}
+
+
+
+.cobrirOferta-Imagem {
+    height: 100%;
+    width:75px ;
+    /* background-color: #09ff00; */
+    display: flex;
+    align-items: center;
+}
+
+.cobrirOferta-Imagem img {
+    height: 70%;
+    margin-left: 8px;
+    /* margin-left: auto; */
+}
+
+.cobrirOferta-Total {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    margin-left: 275px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 1px 0px #000 inset;
+}
+
+.cobrirOferta-Total p {
+    font-family: 'Gotham Rounded', sans-serif;
+    
+    font-size:17px;
+    font-style: normal;
+    font-weight: 510;
+}
+
+#ocultarh2 {
+  display: none;
+}
+
+
+#botao-cobrir222 {
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #EDBB6C;
+    color: #000000;
+    outline-style: none;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 4vw;
+
+   
+    font-family: 'Gotham Rounded', sans-serif;
+    
+    font-size:20px;
+    font-style: normal;
+    font-weight: 550;
+    transition: 0.3s ease-in-out;
+    display: none;
+    margin-bottom: 5vw;
+}
+
+#botao-cobrir222:hover {
+    background-color: #FFE880;
+    color: #000;
+    box-shadow: 0px 0px 1px 0px #000 inset;
+}
+
+
+@media screen and (max-width: 1318px){ 
+    #botao-cobrir222 {
+        display: block;
+    }
+
+    #ocultarh2 {
+        display: block;
+        color: #121212;
+        margin-top: 50px;
+        font-family: 'gotham-rounded-book', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 520;
+        line-height: normal;
+    }
+    .separar-listas {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+    
+    .cobrirOferta-esquerdo {
+        width: 100%;
+        height: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .cobrirOferta-fundo {
+    
+        display: flex;
+       
+    
+    
+        height: 100%;
+        background: url(../img/fundoggg.png);
+     
+      
+    
+    }
+    
+    .cobrirOferta-direito {
+        width: 50%;
+        height: 100%;
+        
+        /* margin-left: auto; */
+        background: url(../img/cobrirOfertaMulher.webp);
+        background-size: cover;
+        background-position: center; /* Opcional: centraliza a imagem na tela */
+        display: none;
+    }
+    
+
+
+
+}  
+
+@media screen and (max-width: 711px){  
+
+    .separar-listas {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        margin-top: 100px;
+    }
+
+    #ocultarh2 {
+        display: block;
+        color: #121212;
+        margin-top: 0px;
+        font-family: 'gotham-rounded-book', sans-serif;
+        font-size: 17px;
+        text-align: center;
+        font-weight: 520;
+        line-height: normal;
+        overflow-wrap: break-word;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 4vw;
+    }
+
+    #botao-cobrir222 {
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #EDBB6C;
+        color: #000000;
+        outline-style: none;
+        border-style: none;
+        cursor: pointer;
+        margin-top: 4vw;
+    
+       
+        font-family: 'Gotham Rounded', sans-serif;
+        
+        font-size:15px;
+        font-style: normal;
+        font-weight: 550;
+        transition: 0.3s ease-in-out;
+        
+        
+    }
+   
+
+}
